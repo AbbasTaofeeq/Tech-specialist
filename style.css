@@ -1,0 +1,90 @@
+    /* Base */
+    body { font-family: 'DM Sans', sans-serif; color: #4A4A4A; }
+    h1,h2,h3,h4,h5 { font-family: 'Plus Jakarta Sans', sans-serif; }
+
+    /* Navbar shadow transition */
+    #navbar { transition: box-shadow 0.35s ease, background 0.35s ease; }
+    #navbar.scrolled { box-shadow: 0 2px 28px rgba(63,122,214,0.12); }
+
+    /* Mobile drawer */
+    #mobile-drawer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1), opacity 0.3s ease;
+      opacity: 0;
+    }
+    #mobile-drawer.open {
+      max-height: 600px;
+      opacity: 1;
+    }
+
+    /* Hamburger animation */
+    .ham-line { transition: all 0.3s ease; }
+    .ham-open .ham-line:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .ham-open .ham-line:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .ham-open .ham-line:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* Hero background */
+    .hero-bg {
+      background-image: url('https://res.cloudinary.com/daqmbfctv/image/upload/e_improve,e_sharpen/v1772102306/IMG_5231_2_d4o7yq.jpg');
+      background-size: cover;
+      background-position: center top;
+    }
+
+    /* Dot-grid overlay */
+    .dot-grid {
+      background-image: radial-gradient(rgba(255,255,255,0.08) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+
+    /* Animated gradient card for right column */
+    .ai-card {
+      background: linear-gradient(135deg, rgba(63,122,214,0.18) 0%, rgba(26,74,150,0.35) 50%, rgba(15,30,65,0.55) 100%);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+
+    /* Glowing orb */
+    .orb {
+      background: radial-gradient(circle at center, rgba(63,122,214,0.8) 0%, rgba(26,74,150,0.4) 50%, transparent 70%);
+      filter: blur(32px);
+    }
+
+    /* Stat card glass */
+    .stat-glass {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.14);
+      backdrop-filter: blur(8px);
+    }
+
+    /* Trust badge */
+    .trust-badge {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    /* CTA secondary underline */
+    .cta-secondary {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .cta-secondary::after {
+      content: '';
+      position: absolute;
+      bottom: -2px; left: 0; right: 0;
+      height: 1px;
+      background: rgba(255,255,255,0.5);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    .cta-secondary:hover::after { transform: scaleX(1); }
+
+    /* Scrolling ticker */
+    @keyframes ticker {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .ticker-track { animation: ticker 22s linear infinite; }
