@@ -264,7 +264,7 @@
      HERO
 ═══════════════════════════════════════ -->
     <section
-      class="relative hero-bg min-h-screen flex flex-col justify-center pt-[50px]"
+      class="relative hero-bg min-h-screen flex flex-col justify-center pt-[76px]"
     >
       <!-- Multi-layer overlay: dark left → blue right -->
       <div
@@ -680,7 +680,7 @@
 
       <!-- Scrolling client trust ticker -->
       <div
-        class="relative z-10 border-t border-white/10 bg-blue-900/20 backdrop-blur-sm py-4 overflow-hidden"
+        class="relative z-10 border-t border-white/10 bg-white/5 backdrop-blur-sm py-4 overflow-hidden"
       >
         <p
           class="text-center text-blue-200/50 font-display text-[11px] uppercase tracking-widest mb-3"
@@ -780,128 +780,219 @@
     <!-- ═══════════════════════════════════════
      SECTION 1 — THE PROBLEM
 ═══════════════════════════════════════ -->
-    <section
-      class="relative py-12 sm:py-16 lg:py-20 overflow-hidden"
-      id="problem"
-    >
-      <!-- Video Background -->
-      <div class="absolute inset-0 z-0">
-        
-        <!-- Dark Overlay -->
-        <div class="absolute inset-0 bg-gradient-to-br from-indigo-600/95 via-blue-700/90 to-[#2d4a7a]/85"></div>
-      </div>
-
-      <!-- Content -->
-      <div class="relative z-10 max-w-content mx-auto px-6 lg:px-10">
+    <section class="bg-gray-light py-28 lg:py-32" id="problem">
+      <div class="max-w-content mx-auto px-6 lg:px-10">
         <!-- Section label -->
-        <div class="flex justify-center mb-6">
+        <div class="flex justify-center mb-5">
           <span
-            class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-display font-semibold text-[11px] tracking-widest uppercase px-4 py-1.5 rounded-full shadow-lg"
+            class="inline-flex items-center gap-2 bg-white border border-blue-brand/15 text-blue-brand font-display font-semibold text-[11px] tracking-widest uppercase px-4 py-1.5 rounded-full shadow-sm"
           >
-            <span class="w-1.5 h-1.5 rounded-full bg-orange-brand animate-pulse"></span>
+            <span class="w-1.5 h-1.5 rounded-full bg-blue-brand"></span>
             The Challenge
           </span>
         </div>
 
         <!-- Headline -->
         <h2
-          class="font-display font-black text-white text-3xl sm:text-4xl lg:text-[48px] text-center leading-tight tracking-tight max-w-4xl mx-auto mb-8"
+          class="font-display font-black text-[#1a2a4a] text-3xl sm:text-4xl lg:text-[44px] text-center leading-tight tracking-tight max-w-3xl mx-auto"
         >
           Is Your Organization Ready for the AI-Powered Future?
         </h2>
 
-        <!-- Interactive Problem Showcase -->
-        <div class="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <!-- Left Side - Problems List -->
-          <div class="space-y-4">
-            <div class="problem-card bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 cursor-pointer group">
-              <div class="flex items-start gap-4">
-                <div class="w-12 h-12 rounded-xl bg-blue-brand/20 flex items-center justify-center flex-shrink-0 group-hover:bg-blue-brand/30 transition-colors">
-                  <svg class="w-6 h-6 text-blue-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h8m-8 5h16"/>
-                  </svg>
-                </div>
-                <div class="flex-1">
-                  <h3 class="font-display font-bold text-white text-lg mb-2">Siloed Data</h3>
-                  <p class="font-body text-white/80 text-sm leading-relaxed">Critical information trapped in departmental silos, slowing decision-making across leadership teams.</p>
-                </div>
-              </div>
-            </div>
+        <!-- Intro -->
+        <p
+          class="font-body text-gray-text text-lg text-center mt-6 max-w-2xl mx-auto leading-relaxed"
+        >
+          Most companies know they need to "go digital," but few know where to
+          start. You might be facing:
+        </p>
 
-            <div class="problem-card bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 cursor-pointer group">
-              <div class="flex items-start gap-4">
-                <div class="w-12 h-12 rounded-xl bg-orange-brand/20 flex items-center justify-center flex-shrink-0 group-hover:bg-orange-brand/30 transition-colors">
-                  <svg class="w-6 h-6 text-orange-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/>
-                  </svg>
-                </div>
-                <div class="flex-1">
-                  <h3 class="font-display font-bold text-white text-lg mb-2">Disconnected Systems</h3>
-                  <p class="font-body text-white/80 text-sm leading-relaxed">Legacy systems operating in isolation, creating bottlenecks and operational inefficiencies.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="problem-card bg-white/10 backdrop-blur-md rounded-xl p-6 border border-white/20 hover:bg-white/15 transition-all duration-300 cursor-pointer group">
-              <div class="flex items-start gap-4">
-                <div class="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-purple-500/30 transition-colors">
-                  <svg class="w-6 h-6 text-purple-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/>
-                  </svg>
-                </div>
-                <div class="flex-1">
-                  <h3 class="font-display font-bold text-white text-lg mb-2">Low Tool Adoption</h3>
-                  <p class="font-body text-white/80 text-sm leading-relaxed">Teams struggling with new technology adoption, reducing ROI on digital investments.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Right Side - Impact Visualization -->
-          <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10">
-            <div class="text-center mb-6">
-              <div class="inline-flex items-center gap-2 px-4 py-2 bg-orange-brand/20 rounded-full mb-4">
-                <div class="w-2 h-2 rounded-full bg-orange-brand animate-pulse"></div>
-                <span class="font-display font-semibold text-orange-200 text-sm">Real Impact</span>
-              </div>
-              <h3 class="font-display font-bold text-white text-2xl mb-2">The Cost of Waiting</h3>
-              <p class="font-body text-white/70 text-sm">Every day of delay impacts your bottom line</p>
-            </div>
-
-            <!-- Stats Grid -->
-            <div class="grid grid-cols-2 gap-4 mb-6">
-              <div class="text-center p-4 bg-white/10 rounded-xl">
-                <div class="font-display font-black text-orange-brand text-2xl mb-1">-23%</div>
-                <div class="font-body text-white/70 text-xs">Productivity Loss</div>
-              </div>
-              <div class="text-center p-4 bg-white/10 rounded-xl">
-                <div class="font-display font-black text-blue-300 text-2xl mb-1">-31%</div>
-                <div class="font-body text-white/70 text-xs">Revenue Impact</div>
-              </div>
-              <div class="text-center p-4 bg-white/10 rounded-xl">
-                <div class="font-display font-black text-purple-300 text-2xl mb-1">-18%</div>
-                <div class="font-body text-white/70 text-xs">Customer Satisfaction</div>
-              </div>
-              <div class="text-center p-4 bg-white/10 rounded-xl">
-                <div class="font-display font-black text-green-300 text-2xl mb-1">-27%</div>
-                <div class="font-body text-white/70 text-xs">Market Competitiveness</div>
-              </div>
-            </div>
-
-            <!-- CTA -->
-            <div class="text-center">
-              <p class="font-display font-semibold text-white text-sm mb-4">Don't let these challenges hold you back</p>
-              <a
-                href="#"
-                class="inline-flex items-center gap-2 bg-orange-brand hover:bg-orange-dark text-white font-display font-bold text-sm px-6 py-3 rounded-xl transition-all duration-200 shadow-lg hover:shadow-orange-brand/30 hover:-translate-y-0.5"
+        <!-- 2x2 Pain Point Cards -->
+        <div class="grid sm:grid-cols-2 gap-6 mt-14">
+          <!-- Card 1 -->
+          <div
+            class="bg-white rounded-xl shadow-sm border border-gray-200/60 p-8 flex flex-col gap-4 group hover:shadow-md hover:border-blue-brand/20 transition-all duration-300"
+          >
+            <div
+              class="w-11 h-11 rounded-lg bg-blue-brand/8 flex items-center justify-center flex-shrink-0"
+            >
+              <svg
+                class="w-5 h-5 text-blue-brand"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.8"
               >
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                </svg>
-                Start Your Transformation
-              </a>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 7h16M4 12h8m-8 5h16"
+                />
+              </svg>
             </div>
+            <div>
+              <h3
+                class="font-display font-bold text-[#1a2a4a] text-[17px] mb-2"
+              >
+                Siloed Data
+              </h3>
+              <p class="font-body text-gray-text text-[15px] leading-relaxed">
+                Siloed data that slows decision-making across departments and
+                leadership.
+              </p>
+            </div>
+            <div
+              class="w-8 h-[2px] bg-blue-brand/20 group-hover:bg-blue-brand/50 transition-colors duration-300 rounded-full"
+            ></div>
           </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-white rounded-xl shadow-sm border border-gray-200/60 p-8 flex flex-col gap-4 group hover:shadow-md hover:border-blue-brand/20 transition-all duration-300"
+          >
+            <div
+              class="w-11 h-11 rounded-lg bg-blue-brand/8 flex items-center justify-center flex-shrink-0"
+            >
+              <svg
+                class="w-5 h-5 text-blue-brand"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3
+                class="font-display font-bold text-[#1a2a4a] text-[17px] mb-2"
+              >
+                Disconnected Systems
+              </h3>
+              <p class="font-body text-gray-text text-[15px] leading-relaxed">
+                Legacy systems that don't talk to each other, creating
+                bottlenecks and inefficiencies.
+              </p>
+            </div>
+            <div
+              class="w-8 h-[2px] bg-blue-brand/20 group-hover:bg-blue-brand/50 transition-colors duration-300 rounded-full"
+            ></div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-white rounded-xl shadow-sm border border-gray-200/60 p-8 flex flex-col gap-4 group hover:shadow-md hover:border-blue-brand/20 transition-all duration-300"
+          >
+            <div
+              class="w-11 h-11 rounded-lg bg-blue-brand/8 flex items-center justify-center flex-shrink-0"
+            >
+              <svg
+                class="w-5 h-5 text-blue-brand"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3
+                class="font-display font-bold text-[#1a2a4a] text-[17px] mb-2"
+              >
+                Low Tool Adoption
+              </h3>
+              <p class="font-body text-gray-text text-[15px] leading-relaxed">
+                Teams struggling to adopt new tools, reducing ROI on technology
+                investments.
+              </p>
+            </div>
+            <div
+              class="w-8 h-[2px] bg-blue-brand/20 group-hover:bg-blue-brand/50 transition-colors duration-300 rounded-full"
+            ></div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="bg-white rounded-xl shadow-sm border border-gray-200/60 p-8 flex flex-col gap-4 group hover:shadow-md hover:border-blue-brand/20 transition-all duration-300"
+          >
+            <div
+              class="w-11 h-11 rounded-lg bg-blue-brand/8 flex items-center justify-center flex-shrink-0"
+            >
+              <svg
+                class="w-5 h-5 text-blue-brand"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3
+                class="font-display font-bold text-[#1a2a4a] text-[17px] mb-2"
+              >
+                Missed Growth
+              </h3>
+              <p class="font-body text-gray-text text-[15px] leading-relaxed">
+                Missed growth opportunities due to inefficiency and reactive —
+                not strategic — operations.
+              </p>
+            </div>
+            <div
+              class="w-8 h-[2px] bg-blue-brand/20 group-hover:bg-blue-brand/50 transition-colors duration-300 rounded-full"
+            ></div>
+          </div>
+        </div>
+
+        <!-- Closing line -->
+        <div class="mt-16 text-center">
+          <div
+            class="inline-block bg-white border-l-4 border-blue-brand rounded-r-xl px-8 py-5 shadow-sm max-w-2xl"
+          >
+            <p
+              class="font-display font-semibold text-[#1a2a4a] text-lg leading-snug"
+            >
+              You deserve technology that simplifies, connects, and scales — not
+              complicates.
+            </p>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="mt-14 flex justify-center">
+          <a
+            href="#"
+            class="group font-display font-bold text-[15px] text-white bg-orange-brand hover:bg-orange-dark px-8 py-4 rounded-xl transition-all duration-200 shadow-lg hover:shadow-orange-brand/30 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-3"
+          >
+            <svg
+              class="w-5 h-5 flex-shrink-0"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            Get Your Free Digital Transformation Audit
+          </a>
         </div>
       </div>
     </section>
@@ -909,14 +1000,9 @@
     <!-- ═══════════════════════════════════════
      SECTION 2 — THE PROMISE
 ═══════════════════════════════════════ -->
-    <section
-      class="section-shell bg-slate-100 py-12 sm:py-16 lg:py-20"
-      id="promise"
-    >
-
-    
+    <section class="bg-white py-28 lg:py-32" id="promise">
       <div class="max-w-content mx-auto px-6 lg:px-10">
-        <div class="grid lg:grid-cols-[45%_55%] gap-12 items-center">
+        <div class="grid lg:grid-cols-[45%_55%] gap-16 items-center">
           <!-- LEFT: Copy -->
           <div class="flex flex-col gap-7">
             <!-- Section label -->
@@ -1329,7 +1415,7 @@
     <!-- ═══════════════════════════════════════
      SECTION 3 — SOCIAL PROOF & AUTHORITY
 ═══════════════════════════════════════ -->
-    <section class="bg-blue-brand py-12 sm:py-16 lg:py-20" id="social-proof">
+    <section class="bg-blue-brand py-28 lg:py-32" id="social-proof">
       <div class="max-w-content mx-auto px-6 lg:px-10">
         <!-- Section label -->
         <div class="flex justify-center mb-6">
@@ -1358,10 +1444,10 @@
         </div>
 
         <!-- Testimonial Cards -->
-        <div class="grid sm:grid-cols-2 gap-8 lg:gap-10 max-w-4xl mx-auto">
+        <div class="grid sm:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <!-- Testimonial 1 -->
           <div
-            class="card-premium bg-white rounded-2xl p-8 flex flex-col gap-5 relative overflow-hidden"
+            class="bg-white rounded-2xl p-8 shadow-xl flex flex-col gap-5 relative overflow-hidden"
           >
             <!-- Top accent -->
             <div
@@ -1430,7 +1516,7 @@
 
           <!-- Testimonial 2 -->
           <div
-            class="card-premium bg-white rounded-2xl p-8 flex flex-col gap-5 relative overflow-hidden"
+            class="bg-white rounded-2xl p-8 shadow-xl flex flex-col gap-5 relative overflow-hidden"
           >
             <!-- Top accent -->
             <div
@@ -1602,10 +1688,7 @@
     <!-- ═══════════════════════════════════════
      SECTION 4 — PROCESS
 ═══════════════════════════════════════ -->
-    <section
-      class="section-shell bg-white py-12 sm:py-16 lg:py-20"
-      id="process"
-    >
+    <section class="bg-white py-28 lg:py-32" id="process">
       <div class="max-w-content mx-auto px-6 lg:px-10">
         <!-- Section label -->
         <div class="flex justify-center mb-5">
@@ -1633,7 +1716,7 @@
 
           <div class="grid sm:grid-cols-3 gap-8 lg:gap-6 relative z-10">
             <!-- Step 1: Diagnose -->
-            <div class="process-step flex flex-col items-center text-center gap-5">
+            <div class="flex flex-col items-center text-center gap-5">
               <!-- Step number + icon -->
               <div class="relative">
                 <div
@@ -1695,9 +1778,7 @@
             </div>
 
             <!-- Step 2: Design -->
-            <div
-              class="process-step flex flex-col items-center text-center gap-5 relative"
-            >
+            <div class="flex flex-col items-center text-center gap-5 relative">
               <!-- Desktop arrow -->
               <div
                 class="hidden lg:flex absolute -left-3 top-[44px] -translate-y-1/2 z-20"
@@ -1775,9 +1856,7 @@
             </div>
 
             <!-- Step 3: Deliver -->
-            <div
-              class="process-step flex flex-col items-center text-center gap-5 relative"
-            >
+            <div class="flex flex-col items-center text-center gap-5 relative">
               <!-- Desktop arrow -->
               <div
                 class="hidden lg:flex absolute -left-3 top-[44px] -translate-y-1/2 z-20"
@@ -1867,10 +1946,7 @@
     <!-- ═══════════════════════════════════════
      SECTION 5 — IMPACT & VISION
 ═══════════════════════════════════════ -->
-    <section
-      class="section-shell bg-gray-light py-12 sm:py-16 lg:py-20"
-      id="vision"
-    >
+    <section class="bg-gray-light py-28 lg:py-32" id="vision">
       <div class="max-w-content mx-auto px-6 lg:px-10">
         <div
           class="max-w-[800px] mx-auto text-center flex flex-col items-center gap-8"
@@ -1918,7 +1994,7 @@
           <!-- Subtle stat pillars -->
           <div class="flex flex-wrap justify-center gap-4 mt-2 w-full">
             <div
-              class="vision-pill border border-blue-brand/12 rounded-xl px-6 py-4 flex flex-col items-center gap-1 flex-1 min-w-[140px]"
+              class="bg-white border border-blue-brand/12 rounded-xl px-6 py-4 flex flex-col items-center gap-1 shadow-sm flex-1 min-w-[140px]"
             >
               <span class="font-display font-black text-blue-brand text-2xl"
                 >Ethical</span
@@ -1928,7 +2004,7 @@
               >
             </div>
             <div
-              class="vision-pill border border-blue-brand/12 rounded-xl px-6 py-4 flex flex-col items-center gap-1 flex-1 min-w-[140px]"
+              class="bg-white border border-blue-brand/12 rounded-xl px-6 py-4 flex flex-col items-center gap-1 shadow-sm flex-1 min-w-[140px]"
             >
               <span class="font-display font-black text-blue-brand text-2xl"
                 >Integrity</span
@@ -1938,7 +2014,7 @@
               >
             </div>
             <div
-              class="vision-pill border border-blue-brand/12 rounded-xl px-6 py-4 flex flex-col items-center gap-1 flex-1 min-w-[140px]"
+              class="bg-white border border-blue-brand/12 rounded-xl px-6 py-4 flex flex-col items-center gap-1 shadow-sm flex-1 min-w-[140px]"
             >
               <span class="font-display font-black text-blue-brand text-2xl"
                 >Capacity</span
@@ -1977,7 +2053,7 @@
      SECTION 6 — FINAL CONVERSION
 ═══════════════════════════════════════ -->
     <section
-      class="relative bg-blue-brand py-16 lg:py-20 overflow-hidden"
+      class="relative bg-blue-brand py-32 lg:py-40 overflow-hidden"
       id="cta-final"
     >
       <!-- Background depth layers -->
@@ -2529,7 +2605,7 @@
                   <p
                     class="font-body text-white/40 text-[13px] leading-relaxed"
                   >
-                    Abuja Liaison Office, FCT
+                    Lagos, Nigeria<br />Abuja Liaison Office, FCT
                   </p>
                 </div>
               </li>

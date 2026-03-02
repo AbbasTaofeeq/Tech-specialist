@@ -156,15 +156,47 @@ h6 {
 
 /* Responsive improvements */
 @media (max-width: 768px) {
-  .vis-ai, .vis-infra, .vis-consult, .vis-software {
+  .vis-ai,
+  .vis-infra,
+  .vis-consult,
+  .vis-software {
     margin-bottom: 2rem;
   }
-  
+
   .code-line {
     font-size: 10px;
   }
-  
+
   .font-display {
     word-break: break-word;
+  }
+}
+
+/* Extra small screens: tighten hero and service visuals */
+@media (max-width: 640px) {
+  /* Hero text scaling */
+  #services-hero h1 {
+    font-size: 1.9rem;
+  }
+
+  #services-hero p {
+    font-size: 0.98rem;
+  }
+
+  /* Reduce padding on visual panels to avoid squashing text */
+  .vis-ai,
+  .vis-infra,
+  .vis-consult,
+  .vis-software {
+    padding: 1.25rem;
+  }
+
+  /* Service 4 code block: keep it readable on very small screens */
+  .vis-software .font-mono {
+    font-size: 9px;
+  }
+
+  .vis-software .code-line {
+    white-space: normal;
   }
 }
