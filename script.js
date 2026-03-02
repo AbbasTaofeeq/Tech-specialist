@@ -39,3 +39,31 @@
       drawer.classList.remove('open');
     });
   });
+
+  // ── Service 4 code typing: start when in view ───────────────
+  const softwareSection = document.getElementById('service-software');
+  if (softwareSection) {
+    const softwareVisual = softwareSection.querySelector('.vis-software');
+
+    if (softwareVisual && 'IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(
+        (entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              softwareVisual.classList.add('code-anim-active');
+              // Trigger only once per page load
+              obs.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.35,
+        },
+      );
+
+      observer.observe(softwareSection);
+    } else if (softwareVisual) {
+      // Fallback: if IntersectionObserver is not supported, keep animation running
+      softwareVisual.classList.add('code-anim-active');
+    }
+  }

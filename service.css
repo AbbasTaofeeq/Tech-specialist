@@ -118,27 +118,35 @@ h6 {
 .code-line {
   overflow: hidden;
   white-space: nowrap;
-  animation: typeIn 1.2s ease-out forwards;
+  animation: typeIn 3.5s ease-out forwards;
 }
 .code-line-d1 {
-  animation-delay: 0.2s;
+  animation-delay: 200ms;
   width: 0;
 }
 .code-line-d2 {
-  animation-delay: 0.5s;
+  animation-delay: 400ms;
   width: 0;
 }
 .code-line-d3 {
-  animation-delay: 0.8s;
+  animation-delay: 600ms;
   width: 0;
 }
 .code-line-d4 {
-  animation-delay: 1.1s;
+  animation-delay: 800ms;
   width: 0;
 }
 .code-line-d5 {
-  animation-delay: 1.4s;
+  animation-delay: 1200ms;
   width: 0;
+}
+
+/* Pause code typing animation by default; start when section becomes active */
+.vis-software .code-line {
+  animation-play-state: paused;
+}
+.vis-software.code-anim-active .code-line {
+  animation-play-state: running;
 }
 
 /* Bar chart animation */
