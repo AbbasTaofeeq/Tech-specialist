@@ -153,3 +153,18 @@ h6 {
 .bar-animate {
   animation: growUp 1s ease-out forwards;
 }
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .vis-ai, .vis-infra, .vis-consult, .vis-software {
+    margin-bottom: 2rem;
+  }
+  
+  .code-line {
+    font-size: 10px;
+  }
+  
+  .font-display {
+    word-break: break-word;
+  }
+}

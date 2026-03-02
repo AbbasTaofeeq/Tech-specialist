@@ -88,3 +88,141 @@
       100% { transform: translateX(-50%); }
     }
     .ticker-track { animation: ticker 22s linear infinite; }
+
+    /* Premium light cards used across sections */
+    .card-premium {
+      position: relative;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #ffffff 0%, #f7f8fc 45%, #ffffff 100%);
+      border: 1px solid rgba(13, 35, 85, 0.06);
+      box-shadow: 0 18px 45px rgba(15, 35, 90, 0.06);
+      transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease,
+        background 0.35s ease;
+    }
+
+    .card-premium::before {
+      content: '';
+      position: absolute;
+      inset: -1px;
+      border-radius: inherit;
+      background: linear-gradient(
+        135deg,
+        rgba(63, 122, 214, 0.3),
+        rgba(240, 90, 40, 0.16)
+      );
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.35s ease;
+      z-index: -1;
+    }
+
+    .card-premium:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 22px 60px rgba(15, 35, 90, 0.1);
+      border-color: rgba(63, 122, 214, 0.35);
+      background: linear-gradient(135deg, #ffffff 0%, #f0f3ff 60%, #ffffff 100%);
+    }
+
+    .card-premium:hover::before {
+      opacity: 1;
+    }
+
+    /* Dark premium cards for blue sections */
+    .card-premium-dark {
+      position: relative;
+      border-radius: 20px;
+      background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.18), transparent 55%),
+        rgba(8, 26, 63, 0.96);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      box-shadow: 0 20px 60px rgba(4, 12, 35, 0.7);
+      overflow: hidden;
+      transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease,
+        background 0.35s ease;
+    }
+
+    .card-premium-dark::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(
+        circle at top right,
+        rgba(240, 90, 40, 0.24),
+        transparent 65%
+      );
+      opacity: 0;
+      transition: opacity 0.35s ease;
+    }
+
+    .card-premium-dark:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255, 255, 255, 0.3);
+      background:
+        radial-gradient(circle at top left, rgba(255, 255, 255, 0.24), transparent 55%),
+        rgba(7, 22, 52, 0.98);
+    }
+
+    .card-premium-dark:hover::before {
+      opacity: 1;
+    }
+
+    /* Soft section shell background between hero and footer */
+    .section-shell {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .section-shell::before,
+    .section-shell::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+    }
+
+    .section-shell::before {
+      background: radial-gradient(
+        circle at top left,
+        rgba(63, 122, 214, 0.08),
+        transparent 60%
+      );
+      opacity: 0.9;
+    }
+
+    .section-shell::after {
+      background: radial-gradient(
+        circle at bottom right,
+        rgba(240, 90, 40, 0.06),
+        transparent 65%
+      );
+      opacity: 0.7;
+    }
+
+    .section-shell > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Process steps subtle hover */
+    .process-step {
+      transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    }
+
+    .process-step:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(15, 35, 90, 0.12);
+    }
+
+    /* Mission stat pills refinement */
+    .vision-pill {
+      background: linear-gradient(135deg, #ffffff 0%, #f6f7fb 50%, #ffffff 100%);
+      box-shadow: 0 14px 40px rgba(15, 35, 90, 0.06);
+    }
