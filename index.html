@@ -675,61 +675,125 @@ tailwind.config = {
   SECTION 5 — WHY TECHSPECIALIST
   BG: #F5F7FA  |  Cards: #FFFFFF, border #E5E7EB
 ══════════════════════════════════════════ -->
-<section id="why" class="bg-gray-bg py-20 lg:py-28 border-t border-bdr">
+<section id="why" class="bg-gray-bg py-16 lg:py-20 border-t border-bdr">
   <div class="max-w-[1200px] mx-auto px-5 lg:px-10">
 
-    <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-end mb-14 lg:mb-18">
+    <!-- Header -->
+    <div class="grid lg:grid-cols-2 gap-10 items-end mb-12">
       <div>
-        <div class="reveal flex items-center gap-3 mb-4">
-          <span class="w-6 h-[2px] bg-[#F05A28] flex-shrink-0"></span>
-          <span class="font-body font-bold text-[10px] tracking-[.18em] uppercase text-[#F05A28]">Why Techspecialist</span>
+        <div class="flex items-center gap-3 mb-4">
+          <span class="w-6 h-[2px] bg-[#F05A28]"></span>
+          <span class="font-body font-bold text-[10px] tracking-[.18em] uppercase text-[#F05A28]">
+            Why Techspecialist
+          </span>
         </div>
-        <h2 class="reveal d1 font-display font-bold text-h2 text-txt-main">Built for Africa's<br/><em class="italic text-navy">Operational Reality.</em></h2>
+        <h2 class="font-display font-bold text-3xl lg:text-4xl text-txt-main">
+          Built for Africa’s <span class="italic text-navy">Operational Reality</span>
+        </h2>
       </div>
-      <p class="reveal d2 font-body text-[15px] text-txt-muted leading-[1.8]">We are not a foreign template adapted to a single market. We are an Africa-born firm built to understand the regulatory, infrastructural, and operational complexities shaping institutions across West Africa and the continent — delivering results locally and at international scale.</p>
+
+      <p class="font-body text-sm text-txt-muted leading-[1.8]">
+        We are an Africa-led consulting firm built to understand the regulatory,
+        infrastructural, and institutional complexities shaping organizations
+        across the continent — delivering measurable outcomes locally and internationally.
+      </p>
     </div>
 
-    <!-- 2×2 cards — white bg, #E5E7EB border, hover: blue underline from ::after -->
-    <div class="grid sm:grid-cols-2 gap-px bg-bdr border border-bdr">
+    <!-- Cards -->
+    <div class="grid md:grid-cols-3 gap-6">
 
-      <div class="diff-card relative bg-white p-8 lg:p-10 flex flex-col gap-5 overflow-hidden hover:bg-gray-bg transition-colors">
-        <div class="w-10 h-10 bg-[#F05A28] flex items-center justify-center flex-shrink-0">
-          <svg class="w-[18px] h-[18px] text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+      <!-- Card 1 -->
+      <div class="bg-white border border-bdr p-6 flex flex-col gap-4 transition hover:shadow-md">
+        <div class="w-9 h-9 bg-[#F05A28] flex items-center justify-center">
+          <!-- Icon -->
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+          </svg>
         </div>
-        <div class="font-display font-bold text-navy leading-none tracking-[-0.03em]" style="font-size:clamp(28px,3vw,40px)">Local</div>
-        <div class="font-body font-bold text-[14.5px] text-txt-main">Deep Local Context Expertise</div>
-        <p class="font-body text-[13.5px] text-txt-muted leading-[1.7]">We understand the regulatory, infrastructural, and operational realities of Nigerian and West African institutions. Our solutions are designed for your world — not adapted from someone else's.</p>
+        <h3 class="font-display font-bold text-lg text-navy">Continental Context Expertise</h3>
+        <p class="text-sm text-txt-muted leading-relaxed">
+          Deep understanding of regulatory systems, infrastructure realities,
+          and operational structures across Africa.
+        </p>
       </div>
 
-      <div class="diff-card relative bg-white p-8 lg:p-10 flex flex-col gap-5 overflow-hidden hover:bg-gray-bg transition-colors">
-        <div class="w-10 h-10 bg-[#F05A28] flex items-center justify-center flex-shrink-0">
-          <svg class="w-[18px] h-[18px] text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+      <!-- Card 2 -->
+      <div class="bg-white border border-bdr p-6 flex flex-col gap-4 transition hover:shadow-md">
+        <div class="w-9 h-9 bg-[#F05A28] flex items-center justify-center">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M9 12h6m-6 4h6"/>
+          </svg>
         </div>
-        <div class="font-display font-bold text-navy leading-none tracking-[-0.03em]" style="font-size:clamp(28px,3vw,40px)">100%</div>
-        <div class="font-body font-bold text-[14.5px] text-txt-main">Enterprise-Level Discipline</div>
-        <p class="font-body text-[13.5px] text-txt-muted leading-[1.7]">Structured frameworks. Clear documentation. Secure, audit-ready implementations. Every engagement managed with the rigour that regulated industries and government institutions demand.</p>
+        <h3 class="font-display font-bold text-lg text-navy">Enterprise Discipline</h3>
+        <p class="text-sm text-txt-muted leading-relaxed">
+          Structured frameworks, documentation, and audit-ready
+          implementations trusted by regulated industries.
+        </p>
       </div>
 
-      <div class="diff-card relative bg-white p-8 lg:p-10 flex flex-col gap-5 overflow-hidden hover:bg-gray-bg transition-colors">
-        <div class="w-10 h-10 bg-[#F05A28] flex items-center justify-center flex-shrink-0">
-          <svg class="w-[18px] h-[18px] text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+      <!-- Card 3 -->
+      <div class="bg-white border border-bdr p-6 flex flex-col gap-4 transition hover:shadow-md">
+        <div class="w-9 h-9 bg-[#F05A28] flex items-center justify-center">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M9 19v-6a2 2 0 00-2-2H5"/>
+          </svg>
         </div>
-        <div class="font-display font-bold text-navy leading-none tracking-[-0.03em]" style="font-size:clamp(28px,3vw,40px)">KPI</div>
-        <div class="font-body font-bold text-[14.5px] text-txt-main">Outcome-Driven Approach</div>
-        <p class="font-body text-[13.5px] text-txt-muted leading-[1.7]">Every engagement is tied to measurable performance indicators agreed upon before work begins. You track progress against real numbers — not promises.</p>
+        <h3 class="font-display font-bold text-lg text-navy">Outcome-Driven Delivery</h3>
+        <p class="text-sm text-txt-muted leading-relaxed">
+          Every engagement is tied to measurable KPIs defined before execution begins.
+        </p>
       </div>
 
-      <div class="diff-card relative bg-white p-8 lg:p-10 flex flex-col gap-5 overflow-hidden hover:bg-gray-bg transition-colors">
-        <div class="w-10 h-10 bg-[#F05A28] flex items-center justify-center flex-shrink-0">
-          <svg class="w-[18px] h-[18px] text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+      <!-- Hidden Card (View More) -->
+      <div id="extraCard" class="hidden bg-white border border-bdr p-6 flex flex-col gap-4 transition hover:shadow-md md:col-span-3 lg:col-span-1">
+        <div class="w-9 h-9 bg-[#F05A28] flex items-center justify-center">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M9 12l2 2 4-4"/>
+          </svg>
         </div>
-        <div class="font-display font-bold text-navy leading-none tracking-[-0.03em]" style="font-size:clamp(28px,3vw,40px)">Ethical</div>
-        <div class="font-body font-bold text-[14.5px] text-txt-main">Ethical AI &amp; Data Governance</div>
-        <p class="font-body text-[13.5px] text-txt-muted leading-[1.7]">Security, privacy, and compliance are non-negotiable in every solution we build. Our AI implementations meet international data governance standards and Nigerian regulatory requirements.</p>
+        <h3 class="font-display font-bold text-lg text-navy">Ethical AI & Data Governance</h3>
+        <p class="text-sm text-txt-muted leading-relaxed">
+          Secure, compliant, and aligned with international data governance standards.
+        </p>
       </div>
 
     </div>
+
+    <!-- View More Button -->
+    <div class="mt-10 text-center">
+      <button id="viewMoreBtn"
+        class="border border-navy text-navy px-6 py-3 text-xs font-bold tracking-widest uppercase transition hover:bg-navy hover:text-white">
+        View More
+      </button>
+    </div>
+
   </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+  SECTION 6 — FOUNDER'S STORY
+══════════════════════════════════════════ -->
+
+<section id="fanda-story" class="bg-[#0B1F3B] py-20">
+
+  <div class="max-w-[1000px] mx-auto px-5 text-center">
+
+    <h3 class="text-white text-3xl font-display font-bold mb-10">
+     The FOUNDER’S STORY
+    </h3>
+
+    <div class="relative w-full aspect-video overflow-hidden shadow-2xl">
+      <video autoplay muted loop playsinline class="w-full h-full object-contain bg-[#0B1F3B]">
+        <source src="https://res.cloudinary.com/daqmbfctv/video/upload/v1772185357/1772185333283.publer.com_slnguv.mp4" type="video/mp4">
+      </video>
+    </div>
+
+  </div>
+
 </section>
 
 

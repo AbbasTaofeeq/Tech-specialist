@@ -43,6 +43,13 @@ stickyX.addEventListener('click', () => {
   stickyEl.classList.remove('show');
 });
 
+const btn = document.getElementById("viewMoreBtn");
+  const extra = document.getElementById("extraCard");
+
+  btn.addEventListener("click", () => {
+    extra.classList.toggle("hidden");
+    btn.textContent = extra.classList.contains("hidden") ? "View More" : "View Less";
+  });
  
  // ── Service 4 code typing: start when in view ───────────────
   // const softwareSection = document.getElementById('service-software');
