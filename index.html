@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Techspecialist Consulting Limited — Nigeria's Premier AI &amp; Digital Transformation Partner</title>
+<meta name="description" content="We help Nigerian organizations reduce operational inefficiencies by up to 60% using AI and intelligent automation. Trusted by CBN, NNPCL, Access Bank, NITDA and more."/>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="service.css"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Barlow:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        navy:       '#0B1F3B',
+        'navy-hover':'#1E4ED8',
+        'blue-acc': '#1E4ED8',
+        'blue-dark':'#173CB5',
+        'gray-bg':  '#F5F7FA',
+        'bdr':      '#E5E7EB',
+        'txt-main': '#111827',
+        'txt-muted':'#6B7280',
+        'txt-dim':  '#D1D5DB',
+      },
+      fontFamily: {
+        display: ['"Cormorant Garamond"','Georgia','serif'],
+        body:    ['"Barlow"','system-ui','sans-serif'],
+        mono:    ['"IBM Plex Mono"','monospace'],
+      },
+    },
+  },
+};
+</script>
+
+ 
+</head>
+
+<body class="bg-white font-body text-txt-main overflow-x-hidden antialiased">
+
+<!-- ══════════════════════════════════════════
+  NAVBAR
+══════════════════════════════════════════ -->
+<header id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-white">
+  <div class="h-[3px] bg-gradient-to-r from-blue-100 via-blue-300 to-orange-200"></div>
+  <div class="max-w-content mx-auto px-6 lg:px-10">
+    <div class="flex items-center justify-between lg:justify-around h-[76px]">
+
+      <!-- Logo -->
+      <a href="index.html" class="flex-shrink-0 flex items-center gap-3">
+        <img
+          src="https://res.cloudinary.com/daqmbfctv/image/upload/v1772108889/WhatsApp_Image_2026-02-26_at_12.00.40-removebg-preview_qp8kjd.png"
+          alt="Techspecialist Consulting Limited"
+          class="h-11 w-auto object-contain"
+          onerror="this.style.display='none'; document.getElementById('logo-fallback').style.display='flex';"
+        />
+        <div id="logo-fallback" class="hidden items-center gap-2">
+          <div class="w-9 h-9 rounded-lg bg-blue-brand flex items-center justify-center">
+            <span class="text-white font-display font-black text-base">TC</span>
+          </div>
+          <div class="flex flex-col leading-tight">
+            <span class="font-display font-bold text-[15px] text-gray-900 tracking-tight">Techspecialist</span>
+            <span class="font-display font-medium text-[11px] text-blue-brand tracking-widest uppercase">Consulting Limited</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center gap-1">
+        <a href="service.html" class="font-display font-extra-bold text-[18px] text-gray-text px-3.5 py-2 rounded-md hover:text-blue-brand hover:bg-blue-50 transition-all">Services</a>
+        <a href="casestudies.html" class="font-display font-extra-bold text-[18px] text-gray-text px-3.5 py-2 rounded-md hover:text-blue-brand hover:bg-blue-50 transition-all">Case Studies</a>
+        <a href="aboutus.html" class="font-display font-extra-bold text-[18px] text-gray-text px-3.5 py-2 rounded-md hover:text-blue-brand hover:bg-blue-50 transition-all">About Us</a>
+        <a href="partnership.html" class="font-display font-extra-bold text-[18px] text-gray-text px-3.5 py-2 rounded-md hover:text-blue-brand hover:bg-blue-50 transition-all">Partnership</a>
+        <a href="blog.html" class="font-display font-extra-bold text-[18px] text-gray-text px-3.5 py-2 rounded-md hover:text-blue-brand hover:bg-blue-50 transition-all">Blog</a>
+        <a href="contact.html" class="font-display font-extra-bold text-[18px] text-gray-text px-3.5 py-2 rounded-md hover:text-blue-brand hover:bg-blue-50 transition-all">Contact</a>
+      </nav>
+
+      <div class="hidden lg:flex">
+        <a href="#cta-services"
+           class="font-display font-bold text-[14px] text-white bg-[#F05A28] hover:bg-orange-dark px-5 py-3 rounded-lg transition-all shadow-md hover:shadow-orange-brand/30 hover:shadow-lg hover:-translate-y-0.5 flex items-center gap-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          Claim My Free Digital Audit
+        </a>
+      </div>
+
+      <button id="ham-btn" class="lg:hidden flex flex-col gap-[5px] p-2 rounded-md hover:bg-gray-light transition-colors" aria-label="Toggle menu">
+        <span class="ham-line block w-6 h-[2px] bg-blue-400 rounded-sm origin-center"></span>
+        <span class="ham-line block w-6 h-[2px] bg-blue-400 rounded-sm"></span>
+        <span class="ham-line block w-6 h-[2px] bg-blue-400 rounded-sm origin-center"></span>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-drawer" class="lg:hidden bg-white border-t border-gray-100">
+    <nav class="max-w-content mx-auto px-6 py-4 flex flex-col gap-1">
+      <a href="service.html" class="font-display font-medium text-[15px] text-gray-text py-3 px-3 rounded-lg hover:bg-gray-light hover:text-blue-brand transition-all border-b border-gray-100">Services</a>
+      <a href="casestudies.html" class="font-display font-medium text-[15px] text-gray-text py-3 px-3 rounded-lg hover:bg-gray-light hover:text-blue-brand transition-all border-b border-gray-100">Case Studies</a>
+      <a href="aboutus.html" class="font-display font-medium text-[15px] text-gray-text py-3 px-3 rounded-lg hover:bg-gray-light hover:text-blue-brand transition-all border-b border-gray-100">About Us</a>
+      <a href="partnership.html" class="font-display font-medium text-[15px] text-gray-text py-3 px-3 rounded-lg hover:bg-gray-light hover:text-blue-brand transition-all border-b border-gray-100">Partnership</a>
+      <a href="blog.html" class="font-display font-medium text-[15px] text-gray-text py-3 px-3 rounded-lg hover:bg-gray-light hover:text-blue-brand transition-all border-b border-gray-100">Blog</a>
+      <a href="contact.html" class="font-display font-medium text-[15px] text-gray-text py-3 px-3 rounded-lg hover:bg-gray-light hover:text-blue-brand transition-all">Contact</a>
+      <a href="#cta-services" class="mt-4 font-display font-bold text-[15px] text-white bg-[#F05A28] hover:bg-orange-dark px-5 py-3.5 rounded-lg text-center shadow-md transition-all flex items-center justify-center gap-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        Claim My Free Digital Audit
+      </a>
+    </nav>
+  </div>
+</header>
+
+
+<!-- ══════════════════════════════════════════
+  HERO  —  Option B Premium Dark
+  BG: #0B1F3B  |  Text: #FFFFFF  |  CTA: white bg + navy text
+══════════════════════════════════════════ -->
+ 
+  <!-- Structural grid overlay — no gradients, no glows -->
+  <section id="hero" class="relative min-h-screen flex flex-col justify-end pt-[40px] lg:pt-[72px] overflow-hidden">
+
+  <!-- Background Image -->
+  <div class="absolute inset-0">
+    <img src="https://res.cloudinary.com/daqmbfctv/image/upload/v1772102306/IMG_5231_2_d4o7yq.jpg"
+         class="w-full h-full object-cover"
+         alt="AI digital transformation background">
+  </div>
+
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-[#0B1F3B]/80"></div>
+
+  <!-- Grid Overlay -->
+  <div class="absolute inset-0 pointer-events-none"
+       style="
+       background-image:
+       linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+       linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+       background-size: 64px 64px;">
+  </div>
+
+  <!-- Your content -->
+  <div class="relative z-10">
+
+  <!-- Ghost numeral -->
+
+  <div class="relative z-10 max-w-[1200px] mx-auto px-5 lg:px-10 w-full">
+    <div class="grid lg:grid-cols-[1fr_320px] gap-12 lg:gap-16 items-end py-20 lg:py-24">
+
+      <!-- Left -->
+      <div class="flex flex-col gap-7">
+
+        <!-- Eyebrow -->
+        <div class="reveal flex items-center gap-3">
+          <span class="relative w-2 h-2 flex-shrink-0">
+            <span class="pulse-ring absolute inset-0 rounded-full bg-[#F05A28]"></span>
+          </span>
+          <span class="font-mono text-[10px] tracking-[.20em] uppercase text-white/40">Nigeria's Premier AI &amp; Digital Transformation Partner</span>
+        </div>
+
+        <!-- Headline -->
+        <h1 class="reveal d1 font-display font-bold text-h1 text-white">
+          We Reduce<br/>
+          <em class="italic">Operational Inefficiencies</em><br/>
+          <span class="text-white/45 font-semibold not-italic" style="font-size:.72em">by Up to 60%.</span>
+        </h1>
+
+        <!-- Subtext -->
+        <p class="reveal d2 font-body font-light text-white/55 leading-relaxed max-w-[540px]" style="font-size:clamp(15px,1.5vw,17px)">
+          From fragmented systems and manual reporting to streamlined, data-driven operations — we design AI-powered solutions that cut waste, improve visibility, and accelerate measurable growth across Nigerian institutions.
+        </p>
+
+        <!-- CTAs -->
+        <div class="reveal d3 flex flex-wrap items-center gap-4">
+          <!-- Primary CTA on dark section = white bg + navy text -->
+          <a href="#final-cta" class="inline-flex items-center gap-2 bg-white text-navy font-body font-bold text-[12px] tracking-[.10em] uppercase px-7 py-4 transition-all hover:bg-gray-bg shadow-[0_4px_14px_rgba(0,0,0,.20)] whitespace-nowrap">
+            <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            Claim My Free Audit
+          </a>
+          <!-- Secondary outlined -->
+          <a href="case-studies.html" class="inline-flex items-center gap-2 bg-transparent text-white/65 font-body font-bold text-[12px] tracking-[.10em] uppercase px-7 py-4 border-2 border-white/20 transition-all hover:border-white/50 hover:text-white whitespace-nowrap">
+            See Case Studies
+          </a>
+        </div>
+
+        <!-- Micro trust -->
+        <div class="reveal d4 flex items-center gap-4 flex-wrap pt-1">
+          <span class="flex items-center gap-2 font-body text-[11px] text-white/55">
+            <svg class="w-3.5 h-3.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            No cost. No obligation.
+          </span>
+          <span class="w-px h-3 bg-white/10" aria-hidden="true"></span>
+          <span class="font-body text-[11px] text-white/50">Delivered within 5 working days.</span>
+        </div>
+      </div>
+
+      <!-- Right: KPI panel — dark section stats = white numbers -->
+      <div class="reveal d2 hidden lg:flex flex-col h-full border border-white/[.07] bg-navy bg-opacity-[50%] rounded-2xl shadow-[0_4px_14px_rgba(0,0,0,.10)] border-white/[0.15]">
+        <div class="p-7 flex flex-col gap-0">
+          <p class="font-mono text-[9px] tracking-[.16em] uppercase text-white/55 mb-5">Engagement Performance</p>
+
+          <div class="py-5 border-b border-white/[.06]">
+            <div class="font-display font-bold text-white leading-none tracking-[-0.035em]" style="font-size:52px">60<sup class="text-white align-super" style="font-size:.42em">%</sup></div>
+            <div class="font-mono text-[9px] tracking-[.12em] uppercase text-white/50 mt-2">Avg. Efficiency Gain</div>
+            <div class="font-body text-[12px] text-white/30 mt-1 leading-snug">Average reduction in manual operational processes</div>
+          </div>
+
+          <div class="py-5 border-b border-white/[.06]">
+            <div class="font-display font-bold text-white leading-none tracking-[-0.035em]" style="font-size:52px">50<sup class="text-white align-super" style="font-size:.42em">+</sup></div>
+            <div class="font-mono text-[9px] tracking-[.12em] uppercase text-white/50 mt-2">Organisations Served</div>
+            <div class="font-body text-[12px] text-white/30 mt-1 leading-snug">Public sector, banking, telecoms &amp; enterprise</div>
+          </div>
+
+          <div class="py-5">
+            <div class="font-display font-bold text-white leading-none tracking-[-0.035em]" style="font-size:52px">12<sup class="text-white align-super" style="font-size:.42em">+</sup></div>
+            <div class="font-mono text-[9px] tracking-[.12em] uppercase text-white/50 mt-2">Government Projects</div>
+            <div class="font-body text-[12px] text-white/30 mt-1 leading-snug">Federal and state-level digital transformation mandates</div>
+          </div>
+        </div>
+        <div class="p-5 border-t border-white/[.06]">
+          <a href="#final-cta" class="flex items-center justify-center gap-2 bg-[#F05A28] text-white font-body font-bold text-[11px] tracking-[.10em] uppercase py-3.5 w-full transition-colors hover:bg-[#D94817] shadow-[0_4px_14px_rgba(0,0,0,.15)]">
+            Start My Free Audit
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Client ticker -->
+  <div class="relative z-10 border-t border-white/[.06] py-4">
+    <p class="text-center font-mono text-[15px] tracking-[.18em] uppercase text-white mb-3">Trusted by leading Nigerian organisations</p>
+    <div class="ticker-wrap select-none">
+      <div class="ticker-track gap-0 text-white/50" aria-hidden="true">
+        <span class="font-display font-bold text-[13px] px-8">NNPCL</span><span class="text-white/10 text-[8px]">◆</span>
+        <span class="font-display font-bold text-[13px] px-8">CBN</span><span class="text-white/10 text-[8px]">◆</span>
+        <span class="font-display font-bold text-[13px] px-8">Access Bank</span><span class="text-white/10 text-[8px]">◆</span>
+        <span class="font-display font-bold text-[13px] px-8">NITDA</span><span class="text-white/10 text-[8px]">◆</span>
+        <span class="font-display font-bold text-[13px] px-8">Lagos State Govt</span><span class="text-white/10 text-[8px]">◆</span>
+        <span class="font-display font-bold text-[13px] px-8">MTN Nigeria</span><span class="text-white/10 text-[8px]">◆</span>
+        <span class="font-display font-bold text-[13px] px-8">Stanbic IBTC</span><span class="text-white/10 text-[8px]">◆</span>
+        <span class="font-display font-bold text-[13px] px-8">FIRS</span><span class="text-white/10 text-[8px]">◆</span>
+        <span class="font-display font-bold text-[13px] px-8">Zenith Bank</span><span class="text-white/10 text-[8px]">◆</span>
+        <!-- duplicate for loop -->
+        <span class="font-display font-bold text-[13px] px-8">NNPCL</span><span class="text-white/10 text-[8px]">◆</span>
+        <span class="font-display font-bold text-[13px] px-8">CBN</span><span class="text-white/10 text-[8px]">◆</span>
+        <span class="font-display font-bold text-[13px] px-8">Access Bank</span><span class="text-white/10 text-[8px]">◆</span>
+        <span class="font-display font-bold text-[13px] px-8">NITDA</span><span class="text-white/10 text-[8px]">◆</span>
+        <span class="font-display font-bold text-[13px] px-8">Lagos State Govt</span><span class="text-white/10 text-[8px]">◆</span>
+        <span class="font-display font-bold text-[13px] px-8">MTN Nigeria</span><span class="text-white/10 text-[8px]">◆</span>
+        <span class="font-display font-bold text-[13px] px-8">Stanbic IBTC</span><span class="text-white/10 text-[8px]">◆</span>
+        <span class="font-display font-bold text-[13px] px-8">FIRS</span><span class="text-white/10 text-[8px]">◆</span>
+        <span class="font-display font-bold text-[13px] px-8">Zenith Bank</span><span class="text-white/10 text-[8px]">◆</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+  SECTION 1 — PROBLEM
+  BG: #F5F7FA  |  Cards: #FFFFFF  |  Icons: #1E4ED8
+══════════════════════════════════════════ -->
+<section id="problem" class="bg-gray-bg py-20 lg:py-28 overflow-hidden relative">
+  <!-- Ghost numeral decoration -->
+  <span class="ghost absolute right-[-8px] top-[-8px] text-txt-main/[.04] select-none pointer-events-none" style="font-size:clamp(110px,15vw,200px)" aria-hidden="true">01</span>
+
+  <div class="max-w-[1200px] mx-auto px-5 lg:px-10">
+    <div class="grid lg:grid-cols-[5fr_7fr] gap-12 lg:gap-20 items-start">
+
+      <!-- Left framing copy -->
+      <div class="flex flex-col gap-7">
+        <div class="reveal flex items-center gap-3">
+          <span class="w-6 h-[2px] bg-[#F05A28] flex-shrink-0"></span>
+          <span class="font-body font-bold text-[10px] tracking-[.18em] uppercase text-[#F05A28]">The Challenge</span>
+        </div>
+        <h2 class="reveal d1 font-display font-bold text-h2 text-txt-main">Digital Delays<br/>Are Expensive.</h2>
+        <p class="reveal d2 font-display italic text-pull text-txt-muted border-l-2 border-[#F05A28] pl-5 leading-relaxed">
+          Most organizations know they need digital transformation — but <strong class="not-italic font-semibold text-txt-main">delays quietly erode efficiency, revenue, and competitive position.</strong>
+        </p>
+        <p class="reveal d3 font-body text-[15px] text-txt-muted leading-[1.8]">
+          Every month of inaction compounds the cost. The gap between digitally mature institutions and those still on legacy systems widens — and grows more expensive to close.
+        </p>
+        <div class="reveal d4 flex flex-wrap items-center gap-5 pt-1">
+          <a href="#final-cta" class="inline-flex items-center gap-2 bg-[#F05A28] text-white font-body font-bold text-[11px] tracking-[.10em] uppercase px-6 py-3.5 transition-colors hover:bg-[#D94817] shadow-[0_4px_14px_rgba(0,0,0,.15)]">
+            Start Free Audit
+          </a>
+          <p class="font-body italic text-[12px] text-txt-muted">Based on 50+ engagements since 2018.</p>
+        </div>
+      </div>
+
+      <!-- Right: diagnostic rows -->
+      <div class="flex flex-col">
+
+        <div class="reveal flex items-start gap-5 py-6 border-b border-bdr">
+          <div class="flex-1 flex items-start gap-4">
+            <span class="font-mono text-[12px] text-txt-muted/40 w-6 flex-shrink-0 pt-0.5">01</span>
+            <div>
+              <h3 class="font-body font-bold text-[15px] text-txt-main mb-1">Disconnected Systems</h3>
+              <p class="font-body text-[13.5px] text-txt-muted leading-relaxed">Legacy infrastructure in silos blocks real-time decision-making and creates costly data bottlenecks across departments.</p>
+            </div>
+          </div>
+          <div class="flex-shrink-0 text-right">
+            <div class="font-display font-bold text-blue-acc leading-none tracking-[-0.02em]" style="font-size:clamp(20px,2vw,26px)">−31%</div>
+            <span class="font-mono text-[9px] tracking-[.10em] uppercase text-txt-muted block mt-1">Revenue Impact</span>
+          </div>
+        </div>
+
+        <div class="reveal d1 flex items-start gap-5 py-6 border-b border-bdr">
+          <div class="flex-1 flex items-start gap-4">
+            <span class="font-mono text-[12px] text-txt-muted/40 w-6 flex-shrink-0 pt-0.5">02</span>
+            <div>
+              <h3 class="font-body font-bold text-[15px] text-txt-main mb-1">Manual Reporting Overhead</h3>
+              <p class="font-body text-[13.5px] text-txt-muted leading-relaxed">Teams spending 20–30% of productive hours on reports that AI automation could produce in minutes, every day.</p>
+            </div>
+          </div>
+          <div class="flex-shrink-0 text-right">
+            <div class="font-display font-bold text-blue-acc leading-none tracking-[-0.02em]" style="font-size:clamp(20px,2vw,26px)">−23%</div>
+            <span class="font-mono text-[9px] tracking-[.10em] uppercase text-txt-muted block mt-1">Productivity Loss</span>
+          </div>
+        </div>
+
+        <div class="reveal d2 flex items-start gap-5 py-6 border-b border-bdr">
+          <div class="flex-1 flex items-start gap-4">
+            <span class="font-mono text-[12px] text-txt-muted/40 w-6 flex-shrink-0 pt-0.5">03</span>
+            <div>
+              <h3 class="font-body font-bold text-[15px] text-txt-main mb-1">Poor Data Visibility</h3>
+              <p class="font-body text-[13.5px] text-txt-muted leading-relaxed">Critical information trapped in departmental silos slows strategic decisions and increases governance risk.</p>
+            </div>
+          </div>
+          <div class="flex-shrink-0 text-right">
+            <div class="font-display font-bold text-blue-acc leading-none tracking-[-0.02em]" style="font-size:clamp(20px,2vw,26px)">−27%</div>
+            <span class="font-mono text-[9px] tracking-[.10em] uppercase text-txt-muted block mt-1">Competitiveness</span>
+          </div>
+        </div>
+
+        <div class="reveal d3 flex items-start gap-5 py-6 border-b border-bdr">
+          <div class="flex-1 flex items-start gap-4">
+            <span class="font-mono text-[12px] text-txt-muted/40 w-6 flex-shrink-0 pt-0.5">04</span>
+            <div>
+              <h3 class="font-body font-bold text-[15px] text-txt-main mb-1">Low Technology Adoption</h3>
+              <p class="font-body text-[13.5px] text-txt-muted leading-relaxed">Digital investments failing to deliver ROI because teams lack training and change management support to embed new tools.</p>
+            </div>
+          </div>
+          <div class="flex-shrink-0 text-right">
+            <div class="font-display font-bold text-blue-acc leading-none tracking-[-0.02em]" style="font-size:clamp(20px,2vw,26px)">−18%</div>
+            <span class="font-mono text-[9px] tracking-[.10em] uppercase text-txt-muted block mt-1">Satisfaction</span>
+          </div>
+        </div>
+
+        <div class="reveal d4 flex items-start gap-5 py-6">
+          <div class="flex-1 flex items-start gap-4">
+            <span class="font-mono text-[12px] text-txt-muted/40 w-6 flex-shrink-0 pt-0.5">05</span>
+            <div>
+              <h3 class="font-body font-bold text-[15px] text-txt-main mb-1">Rising Operational Costs</h3>
+              <p class="font-body text-[13.5px] text-txt-muted leading-relaxed">Outdated infrastructure demands increasing maintenance spend while delivering diminishing performance year-on-year.</p>
+            </div>
+          </div>
+          <div class="flex-shrink-0 text-right">
+            <div class="font-display font-bold text-blue-acc leading-none tracking-[-0.02em]" style="font-size:clamp(20px,2vw,26px)">+40%</div>
+            <span class="font-mono text-[9px] tracking-[.10em] uppercase text-txt-muted block mt-1">Cost Growth</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+  SECTION 2 — PROMISE
+  BG: #FFFFFF  |  Cards: border #E5E7EB  |  Hover border: #1E4ED8
+══════════════════════════════════════════ -->
+<section id="promise" class="bg-white py-20 lg:py-28">
+  <div class="max-w-[1200px] mx-auto px-5 lg:px-10">
+
+    <!-- Header -->
+    <div class="grid lg:grid-cols-[7fr_5fr] gap-12 lg:gap-20 items-end mb-14 lg:mb-20">
+      <div>
+        <div class="reveal flex items-center gap-3 mb-4">
+          <span class="w-6 h-[2px] bg-[#F05A28] flex-shrink-0"></span>
+          <span class="font-body font-bold text-[10px] tracking-[.18em] uppercase text-[#F05A28]">Our Promise</span>
+        </div>
+        <h2 class="reveal d1 font-display font-bold text-h2 text-txt-main">
+          A Structured Path from Inefficiency<br/>to <em class="italic text-navy">Intelligent Operations.</em>
+        </h2>
+      </div>
+      <div class="flex flex-col gap-5">
+        <p class="reveal d2 font-body text-[15px] text-txt-muted leading-[1.8]">
+          At Techspecialist, we do not sell tools. We design <strong class="font-semibold text-txt-main">transformation systems aligned with your operational reality</strong> — built to last, measured from day one.
+        </p>
+        <a href="service.html" class="reveal d3 self-start inline-flex items-center gap-2 bg-transparent text-navy font-body font-bold text-[11px] tracking-[.10em] uppercase px-6 py-3.5 border-2 border-navy transition-all hover:bg-navy hover:text-white">
+          Explore Our Services
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- 2-col: metrics + dark panel -->
+    <div class="grid lg:grid-cols-[1fr_380px] gap-8 lg:gap-12 items-start">
+
+      <!-- 2×2 metric cards — white, border #E5E7EB, no glow -->
+      <div class="grid sm:grid-cols-2 gap-px bg-bdr border border-bdr">
+        <div class="reveal bg-white p-8 lg:p-10 flex flex-col gap-4 hover:border-l-[3px] hover:border-[#F05A28] transition-all">
+          <div class="font-display font-bold text-navy leading-none tracking-[-0.03em]" style="font-size:clamp(32px,4vw,48px)">60%</div>
+          <div class="font-body font-bold text-[14px] text-txt-main">Reduction in Manual Processes</div>
+          <p class="font-body text-[13.5px] text-txt-muted leading-relaxed">Automated workflows free your teams for higher-value strategic work.</p>
+        </div>
+        <div class="reveal d1 bg-white p-8 lg:p-10 flex flex-col gap-4 hover:border-l-[3px] hover:border-[#F05A28] transition-all">
+          <div class="font-display font-bold text-navy leading-none tracking-[-0.03em]" style="font-size:clamp(32px,4vw,48px)">40%</div>
+          <div class="font-body font-bold text-[14px] text-txt-main">Faster Decision Cycles</div>
+          <p class="font-body text-[13.5px] text-txt-muted leading-relaxed">Unified data ecosystems surface leadership intelligence in real time — not next quarter.</p>
+        </div>
+        <div class="reveal d2 bg-white p-8 lg:p-10 flex flex-col gap-4 hover:border-l-[3px] hover:border-[#F05A28] transition-all">
+          <div class="font-display font-bold text-navy leading-none tracking-[-0.03em]" style="font-size:clamp(32px,4vw,48px)">30%</div>
+          <div class="font-body font-bold text-[14px] text-txt-main">Improved Data Visibility</div>
+          <p class="font-body text-[13.5px] text-txt-muted leading-relaxed">Break down information silos. Every decision-maker sees the same picture at the same time.</p>
+        </div>
+        <div class="reveal d3 bg-white p-8 lg:p-10 flex flex-col gap-4 hover:border-l-[3px] hover:border-[#F05A28] transition-all">
+          <div class="font-display font-bold text-navy leading-none tracking-[-0.03em]" style="font-size:clamp(32px,4vw,48px)">99.9%</div>
+          <div class="font-body font-bold text-[14px] text-txt-main">Infrastructure Uptime</div>
+          <p class="font-body text-[13.5px] text-txt-muted leading-relaxed">Modernized cloud infrastructure eliminates service disruptions and reduces IT overhead.</p>
+        </div>
+      </div>
+
+      <!-- Dark diagnostic panel — navy bg, white numbers (stats dark version) -->
+      <div id="pv" class="reveal d2 bg-navy flex flex-col gap-6 p-8">
+        <div>
+          <p class="font-mono text-[10px] tracking-[.16em] uppercase text-white/50 mb-3">Digital Acceleration Framework™</p>
+          <div class="flex items-end gap-3">
+            <span class="font-display font-bold text-white leading-none tracking-[-0.04em]" style="font-size:68px">94</span>
+            <span class="font-display font-bold text-white/25 pb-2" style="font-size:28px">/100</span>
+          </div>
+          <p class="font-body font-semibold text-[11px] tracking-[.10em] uppercase text-white/30 mt-1.5">Post-Engagement Maturity Score</p>
+        </div>
+
+        <div class="flex flex-col gap-4">
+          <div>
+            <div class="flex justify-between font-body text-[11px] text-white/40 mb-2"><span>AI Integration</span><span>92%</span></div>
+            <div class="bar-track"><div class="bar-fill" style="--w:92%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between font-body text-[11px] text-white/40 mb-2"><span>Data Governance</span><span>88%</span></div>
+            <div class="bar-track"><div class="bar-fill" style="--w:88%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between font-body text-[11px] text-white/40 mb-2"><span>Infrastructure Resilience</span><span>96%</span></div>
+            <div class="bar-track"><div class="bar-fill light" style="--w:96%"></div></div>
+          </div>
+          <div>
+            <div class="flex justify-between font-body text-[11px] text-white/40 mb-2"><span>Team Capability</span><span>84%</span></div>
+            <div class="bar-track"><div class="bar-fill" style="--w:84%"></div></div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2">
+          <div class="border border-white/[.08] px-3 py-2.5 font-body text-[11px] font-semibold text-white/50 flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#F05A28] flex-shrink-0"></span>AI Strategy
+          </div>
+          <div class="border border-white/[.08] px-3 py-2.5 font-body text-[11px] font-semibold text-white/50 flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#F05A28] flex-shrink-0"></span>Cybersecurity
+          </div>
+          <div class="border border-white/[.08] px-3 py-2.5 font-body text-[11px] font-semibold text-white/50 flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#F05A28] flex-shrink-0"></span>Cloud Infra
+          </div>
+          <div class="border border-white/[.08] px-3 py-2.5 font-body text-[11px] font-semibold text-white/50 flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-[#F05A28] flex-shrink-0"></span>Data &amp; BI
+          </div>
+        </div>
+
+        <a href="#final-cta" class="flex items-center justify-center gap-2 bg-[#F05A28] text-white font-body font-bold text-[11px] tracking-[.10em] uppercase py-3.5 transition-colors hover:bg-[#D94817] shadow-[0_4px_14px_rgba(0,0,0,.15)]">
+          Get My Diagnostic
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+  SECTION 3 — SOCIAL PROOF
+  BG: #F5F7FA  |  Cards: #FFFFFF
+  Partner logos: #FFFFFF, grayscale → full color on hover
+══════════════════════════════════════════ -->
+<section id="proof" class="bg-gray-bg py-20 lg:py-28 border-t border-bdr">
+  <div class="max-w-[1200px] mx-auto px-5 lg:px-10">
+
+    <!-- Header -->
+    <div class="text-center mb-14 lg:mb-18">
+      <div class="reveal inline-flex items-center gap-3 font-body font-bold text-[10px] tracking-[.18em] uppercase text-[#F05A28] mb-4">
+        <span class="w-6 h-[2px] bg-[#F05A28]"></span>Client Testimonials<span class="w-6 h-[2px] bg-[#F05A28]"></span>
+      </div>
+      <h2 class="reveal d1 font-display font-bold text-h2 text-txt-main max-w-3xl mx-auto">
+        Trusted by Organizations Driving<br/><em class="italic text-navy">Nigeria's Digital Economy.</em>
+      </h2>
+    </div>
+
+    <!-- Testimonials — white cards, navy accent bar, clean border -->
+    <div class="grid sm:grid-cols-2 gap-px bg-bdr border border-bdr mb-12 lg:mb-16">
+
+      <div class="reveal bg-white p-8 lg:p-12 flex flex-col gap-6 relative overflow-hidden">
+        <div class="absolute top-0 inset-x-0 h-[3px] bg-navy"></div>
+        <svg class="w-8 h-8 text-navy/10 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+        <blockquote class="font-display italic font-normal text-txt-main leading-[1.55] flex-1" style="font-size:clamp(17px,1.9vw,21px)">
+          "Techspecialist helped us eliminate manual bottlenecks that had slowed our reporting for years. The team's understanding of our institutional context was exceptional — the impact was immediate and measurable."
+        </blockquote>
+        <div class="flex items-center gap-4 bg-gray-bg border border-bdr px-5 py-4">
+          <span class="font-display font-bold text-navy leading-none tracking-[-0.03em]" style="font-size:36px">60%</span>
+          <span class="font-body font-semibold text-[13px] text-txt-muted leading-snug">Reduction in<br/>Manual Reporting Processes</span>
+        </div>
+        <div class="flex items-center gap-3 pt-4 border-t border-bdr">
+          <div class="w-10 h-10 bg-gray-bg border border-bdr flex items-center justify-center flex-shrink-0">
+            <svg class="w-4 h-4 text-txt-muted" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          </div>
+          <div class="flex-1">
+            <p class="font-body font-bold text-[13px] text-txt-main">Head of Operations</p>
+            <p class="font-body text-[12px] text-txt-muted">Leading Government Agency</p>
+          </div>
+          <span class="font-mono text-[9px] tracking-[.12em] uppercase text-white bg-[#F05A28] px-2.5 py-1 flex-shrink-0">Government</span>
+        </div>
+      </div>
+
+      <div class="reveal d2 bg-white p-8 lg:p-12 flex flex-col gap-6 relative overflow-hidden">
+        <div class="absolute top-0 inset-x-0 h-[3px] bg-blue-acc"></div>
+        <svg class="w-8 h-8 text-blue-acc/10 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+        <blockquote class="font-display italic font-normal text-txt-main leading-[1.55] flex-1" style="font-size:clamp(17px,1.9vw,21px)">
+          "The clarity they brought to our data systems transformed how leadership makes decisions. For the first time, our board had a single version of the truth. That is worth more than any technology upgrade."
+        </blockquote>
+        <div class="flex items-center gap-4 bg-gray-bg border border-bdr px-5 py-4">
+          <span class="font-display font-bold text-blue-acc leading-none" style="font-size:36px">↑</span>
+          <span class="font-body font-semibold text-[13px] text-txt-muted leading-snug">Immediate &amp; Measurable<br/>Leadership Intelligence</span>
+        </div>
+        <div class="flex items-center gap-3 pt-4 border-t border-bdr">
+          <div class="w-10 h-10 bg-gray-bg border border-bdr flex items-center justify-center flex-shrink-0">
+            <svg class="w-4 h-4 text-txt-muted" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          </div>
+          <div class="flex-1">
+            <p class="font-body font-bold text-[13px] text-txt-main">Head of IT</p>
+            <p class="font-body text-[12px] text-txt-muted">BPP</p>
+          </div>
+          <span class="font-mono text-[9px] tracking-[.12em] uppercase text-white bg-blue-acc px-2.5 py-1 flex-shrink-0">Banking</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Partner logos — white bg, grayscale, no colored backgrounds -->
+    <div class="reveal d3">
+      <p class="font-mono text-[20px] tracking-[.18em] uppercase text-txt-muted text-center mb-5">Organisations We Have Worked With</p>
+      <div class="grid grid-cols-4 sm:grid-cols-8 gap-px bg-bdr border border-bdr bg-white">
+        <div class="client-chip bg-white flex items-center justify-center py-5 px-3"><span class="font-display font-bold text-[15px] text-txt-muted">NNPCL</span></div>
+        <div class="client-chip bg-white flex items-center justify-center py-5 px-3"><span class="font-display font-bold text-[15px] text-txt-muted">CBN</span></div>
+        <div class="client-chip bg-white flex items-center justify-center py-5 px-3"><span class="font-display font-bold text-[15px] text-txt-muted text-center">Access Bank</span></div>
+        <div class="client-chip bg-white flex items-center justify-center py-5 px-3"><span class="font-display font-bold text-[15px] text-txt-muted">NITDA</span></div>
+        <div class="client-chip bg-white flex items-center justify-center py-5 px-3"><span class="font-display font-bold text-[15px] text-txt-muted text-center">Lagos State</span></div>
+        <div class="client-chip bg-white flex items-center justify-center py-5 px-3"><span class="font-display font-bold text-[15px] text-txt-muted text-center">MTN Nigeria</span></div>
+        <div class="client-chip bg-white flex items-center justify-center py-5 px-3"><span class="font-display font-bold text-[15px] text-txt-muted text-center">Stanbic IBTC</span></div>
+        <div class="client-chip bg-white flex items-center justify-center py-5 px-3"><span class="font-display font-bold text-[15px] text-txt-muted">FIRS</span></div>
+      </div>
+    </div>
+
+    <div class="reveal d4 text-center mt-10">
+      <a href="case-studies.html" class="inline-flex items-center gap-2 font-body font-semibold text-[13px] text-blue-acc hover:text-blue-dark hover:underline underline-offset-4 transition-colors">
+        View All Case Studies
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+  SECTION 4 — PROCESS
+  BG: #FFFFFF
+══════════════════════════════════════════ -->
+<section id="process" class="bg-white py-20 lg:py-28">
+  <div class="max-w-[1200px] mx-auto px-5 lg:px-10">
+
+    <div class="max-w-xl mb-14 lg:mb-18">
+      <div class="reveal flex items-center gap-3 mb-4">
+        <span class="w-6 h-[2px] bg-[#F05A28] flex-shrink-0"></span>
+        <span class="font-body font-bold text-[10px] tracking-[.18em] uppercase text-[#F05A28]">How We Work</span>
+      </div>
+      <h2 class="reveal d1 font-display font-bold text-h2 text-txt-main mb-4">From Audit to Measurable Growth —<br/><em class="italic">Three Structured Phases.</em></h2>
+      <p class="reveal d2 font-body text-[15px] text-txt-muted leading-[1.8]">Clear deliverables at every stage. No scope creep. No ambiguity. Just results.</p>
+    </div>
+
+    <!-- Phase accordion -->
+    <div class="flex flex-col border-t border-bdr">
+
+      <!-- Phase 01 -->
+      <div class="phase-row reveal grid grid-cols-[72px_1fr] border-b border-bdr group hover:bg-gray-bg transition-colors">
+        <div class="pt-8 pr-4 flex items-start">
+          <span class="font-display font-bold text-bdr leading-none tracking-[-0.03em] group-hover:text-txt-muted/25 transition-colors" style="font-size:clamp(36px,4vw,52px)">01</span>
+        </div>
+        <div class="phase-inner py-8 pl-6 lg:pl-10 border-l border-bdr transition-colors">
+          <div class="flex items-center gap-4 mb-3 flex-wrap">
+            <h3 class="font-body font-bold text-txt-main" style="font-size:clamp(17px,2vw,21px)">Diagnose</h3>
+            <span class="font-mono text-[9px] tracking-[.10em] uppercase text-blue-acc bg-blue-acc/5 border border-blue-acc/20 px-2.5 py-1">3–5 Working Days</span>
+          </div>
+          <p class="font-body text-[15px] text-txt-muted leading-[1.8] mb-4 max-w-2xl">We conduct a comprehensive digital audit to identify inefficiencies, technology gaps, cybersecurity exposures, and missed automation opportunities. You receive a documented executive summary outlining quick wins and strategic priorities — at zero cost.</p>
+          <div class="flex flex-col gap-2">
+            <div class="font-body text-[13px] text-txt-muted flex items-start gap-2"><span class="text-blue-acc mt-0.5 flex-shrink-0">→</span>Digital Maturity Assessment Report</div>
+            <div class="font-body text-[13px] text-txt-muted flex items-start gap-2"><span class="text-blue-acc mt-0.5 flex-shrink-0">→</span>Prioritized Quick Wins &amp; Strategic Gaps Matrix</div>
+            <div class="font-body text-[13px] text-txt-muted flex items-start gap-2"><span class="text-blue-acc mt-0.5 flex-shrink-0">→</span>Risk &amp; Compliance Exposure Summary</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 02 -->
+      <div class="phase-row reveal d1 grid grid-cols-[72px_1fr] border-b border-bdr group hover:bg-gray-bg transition-colors">
+        <div class="pt-8 pr-4 flex items-start">
+          <span class="font-display font-bold text-blue-acc/20 leading-none tracking-[-0.03em] group-hover:text-blue-acc/35 transition-colors" style="font-size:clamp(36px,4vw,52px)">02</span>
+        </div>
+        <div class="phase-inner py-8 pl-6 lg:pl-10 border-l border-bdr transition-colors">
+          <div class="flex items-center gap-4 mb-3 flex-wrap">
+            <h3 class="font-body font-bold text-txt-main" style="font-size:clamp(17px,2vw,21px)">Design</h3>
+            <span class="font-mono text-[9px] tracking-[.10em] uppercase text-blue-acc bg-blue-acc/5 border border-blue-acc/20 px-2.5 py-1">2–4 Weeks</span>
+          </div>
+          <p class="font-body text-[15px] text-txt-muted leading-[1.8] mb-4 max-w-2xl">Our experts develop a tailored implementation roadmap aligned with your sector, regulatory environment, operational maturity, and budget parameters. Clear milestones. Defined success metrics. Realistic timelines designed to deliver early visible wins.</p>
+          <div class="flex flex-col gap-2">
+            <div class="font-body text-[13px] text-txt-muted flex items-start gap-2"><span class="text-blue-acc mt-0.5 flex-shrink-0">→</span>Custom Digital Transformation Roadmap</div>
+            <div class="font-body text-[13px] text-txt-muted flex items-start gap-2"><span class="text-blue-acc mt-0.5 flex-shrink-0">→</span>Technology Architecture Design &amp; Vendor Recommendations</div>
+            <div class="font-body text-[13px] text-txt-muted flex items-start gap-2"><span class="text-blue-acc mt-0.5 flex-shrink-0">→</span>Investment Model &amp; ROI Projections</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 03 -->
+      <div class="phase-row reveal d2 grid grid-cols-[72px_1fr] group hover:bg-gray-bg transition-colors">
+        <div class="pt-8 pr-4 flex items-start">
+          <span class="font-display font-bold text-bdr leading-none tracking-[-0.03em] group-hover:text-txt-muted/25 transition-colors" style="font-size:clamp(36px,4vw,52px)">03</span>
+        </div>
+        <div class="phase-inner py-8 pl-6 lg:pl-10 border-l border-bdr transition-colors">
+          <div class="flex items-center gap-4 mb-3 flex-wrap">
+            <h3 class="font-body font-bold text-txt-main" style="font-size:clamp(17px,2vw,21px)">Deliver</h3>
+            <span class="font-mono text-[9px] tracking-[.10em] uppercase text-blue-acc bg-blue-acc/5 border border-blue-acc/20 px-2.5 py-1">Ongoing Partnership</span>
+          </div>
+          <p class="font-body text-[15px] text-txt-muted leading-[1.8] mb-4 max-w-2xl">We implement, integrate, train your teams, and monitor performance to ensure sustainable, measurable results. Minimal operational disruption. Our post-implementation support ensures lasting adoption — not just a deployment handoff.</p>
+          <div class="flex flex-col gap-2">
+            <div class="font-body text-[13px] text-txt-muted flex items-start gap-2"><span class="text-blue-acc mt-0.5 flex-shrink-0">→</span>Full Implementation &amp; System Integration</div>
+            <div class="font-body text-[13px] text-txt-muted flex items-start gap-2"><span class="text-blue-acc mt-0.5 flex-shrink-0">→</span>Staff Training &amp; Change Management Programme</div>
+            <div class="font-body text-[13px] text-txt-muted flex items-start gap-2"><span class="text-blue-acc mt-0.5 flex-shrink-0">→</span>Performance Monitoring Dashboard &amp; Quarterly Reviews</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Inline CTA bar — navy dark section -->
+    <div class="reveal d3 mt-10 bg-navy flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 p-7 lg:p-9">
+      <div>
+        <h4 class="font-display font-bold text-white leading-tight tracking-[-0.02em] mb-1" style="font-size:clamp(18px,2.2vw,26px)">Start with a Free Digital Audit.</h4>
+        <p class="font-body text-[13.5px] text-white/40">No cost. No obligation. Delivered within 5 working days.</p>
+      </div>
+      <!-- Primary on dark section = white bg + navy text -->
+      <a href="#final-cta" class="flex-shrink-0 inline-flex items-center gap-2 bg-white text-navy font-body font-bold text-[11px] tracking-[.10em] uppercase px-7 py-3.5 transition-all hover:bg-gray-bg shadow-[0_4px_14px_rgba(0,0,0,.15)] whitespace-nowrap">
+        Start My Free Audit
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+  SECTION 5 — WHY TECHSPECIALIST
+  BG: #F5F7FA  |  Cards: #FFFFFF, border #E5E7EB
+══════════════════════════════════════════ -->
+<section id="why" class="bg-gray-bg py-20 lg:py-28 border-t border-bdr">
+  <div class="max-w-[1200px] mx-auto px-5 lg:px-10">
+
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-end mb-14 lg:mb-18">
+      <div>
+        <div class="reveal flex items-center gap-3 mb-4">
+          <span class="w-6 h-[2px] bg-[#F05A28] flex-shrink-0"></span>
+          <span class="font-body font-bold text-[10px] tracking-[.18em] uppercase text-[#F05A28]">Why Techspecialist</span>
+        </div>
+        <h2 class="reveal d1 font-display font-bold text-h2 text-txt-main">Built for Nigeria's<br/><em class="italic text-navy">Operational Reality.</em></h2>
+      </div>
+      <p class="reveal d2 font-body text-[15px] text-txt-muted leading-[1.8]">We are not a foreign template adapted for the Nigerian market. We are a firm built from the ground up to understand the regulatory, infrastructural, and cultural realities that shape how Nigerian institutions operate — and built to deliver results within them.</p>
+    </div>
+
+    <!-- 2×2 cards — white bg, #E5E7EB border, hover: blue underline from ::after -->
+    <div class="grid sm:grid-cols-2 gap-px bg-bdr border border-bdr">
+
+      <div class="diff-card relative bg-white p-8 lg:p-10 flex flex-col gap-5 overflow-hidden hover:bg-gray-bg transition-colors">
+        <div class="w-10 h-10 bg-[#F05A28] flex items-center justify-center flex-shrink-0">
+          <svg class="w-[18px] h-[18px] text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+        <div class="font-display font-bold text-navy leading-none tracking-[-0.03em]" style="font-size:clamp(28px,3vw,40px)">Local</div>
+        <div class="font-body font-bold text-[14.5px] text-txt-main">Deep Local Context Expertise</div>
+        <p class="font-body text-[13.5px] text-txt-muted leading-[1.7]">We understand the regulatory, infrastructural, and operational realities of Nigerian and West African institutions. Our solutions are designed for your world — not adapted from someone else's.</p>
+      </div>
+
+      <div class="diff-card relative bg-white p-8 lg:p-10 flex flex-col gap-5 overflow-hidden hover:bg-gray-bg transition-colors">
+        <div class="w-10 h-10 bg-[#F05A28] flex items-center justify-center flex-shrink-0">
+          <svg class="w-[18px] h-[18px] text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+        </div>
+        <div class="font-display font-bold text-navy leading-none tracking-[-0.03em]" style="font-size:clamp(28px,3vw,40px)">100%</div>
+        <div class="font-body font-bold text-[14.5px] text-txt-main">Enterprise-Level Discipline</div>
+        <p class="font-body text-[13.5px] text-txt-muted leading-[1.7]">Structured frameworks. Clear documentation. Secure, audit-ready implementations. Every engagement managed with the rigour that regulated industries and government institutions demand.</p>
+      </div>
+
+      <div class="diff-card relative bg-white p-8 lg:p-10 flex flex-col gap-5 overflow-hidden hover:bg-gray-bg transition-colors">
+        <div class="w-10 h-10 bg-[#F05A28] flex items-center justify-center flex-shrink-0">
+          <svg class="w-[18px] h-[18px] text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+        </div>
+        <div class="font-display font-bold text-navy leading-none tracking-[-0.03em]" style="font-size:clamp(28px,3vw,40px)">KPI</div>
+        <div class="font-body font-bold text-[14.5px] text-txt-main">Outcome-Driven Approach</div>
+        <p class="font-body text-[13.5px] text-txt-muted leading-[1.7]">Every engagement is tied to measurable performance indicators agreed upon before work begins. You track progress against real numbers — not promises.</p>
+      </div>
+
+      <div class="diff-card relative bg-white p-8 lg:p-10 flex flex-col gap-5 overflow-hidden hover:bg-gray-bg transition-colors">
+        <div class="w-10 h-10 bg-[#F05A28] flex items-center justify-center flex-shrink-0">
+          <svg class="w-[18px] h-[18px] text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        </div>
+        <div class="font-display font-bold text-navy leading-none tracking-[-0.03em]" style="font-size:clamp(28px,3vw,40px)">Ethical</div>
+        <div class="font-body font-bold text-[14.5px] text-txt-main">Ethical AI &amp; Data Governance</div>
+        <p class="font-body text-[13.5px] text-txt-muted leading-[1.7]">Security, privacy, and compliance are non-negotiable in every solution we build. Our AI implementations meet international data governance standards and Nigerian regulatory requirements.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+  SECTION 6 — VISION
+  BG: #0B1F3B  (dark section)
+══════════════════════════════════════════ -->
+<section id="vision" class="relative bg-navy py-20 lg:py-28">
+
+  <!-- Background Image -->
+  <div class="absolute inset-0">
+    <img src="https://res.cloudinary.com/daqmbfctv/image/upload/e_improve,e_sharpen/v1772548580/WhatsApp_Image_2026-03-03_at_13.30.22_uhczp8.jpg"
+         class="w-full h-full object-cover"
+         alt="AI digital transformation background">
+  </div>
+
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-[#0B1F3B]/80"></div>
+
+  <!-- Grid Overlay -->
+  <div class="absolute inset-0 pointer-events-none"
+       style="
+       background-image:
+       linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+       linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+       background-size: 64px 64px;">
+  </div>
+
+  <!-- Your content -->
+  <div class="relative z-10">  
+  <div class="max-w-[1200px] mx-auto px-5 lg:px-10">
+    <div class="max-w-[720px] mx-auto text-center flex flex-col items-center gap-8">
+
+      <div class="reveal inline-flex items-center gap-3 font-body font-bold text-[15px] tracking-[.18em] uppercase text-white/30">
+        <span class="w-6 h-[2px] bg-white/20"></span>Our Mission<span class="w-6 h-[2px] bg-white/20"></span>
+      </div>
+
+      <h2 class="reveal d1 font-display font-bold text-h2 text-white leading-[1.1] tracking-[-0.025em]">
+        Building Smarter,<br/><em class="italic">More Connected <span class="text-[#F05A28]">Nigeria.</span></em>
+      </h2>
+
+      <div class="reveal d2 w-12 h-px bg-white/10"></div>
+
+      <p class="reveal d3 font-display italic text-white/45 leading-[1.65] max-w-[560px]" style="font-size:clamp(17px,2.2vw,22px)">
+        We believe <strong class="not-italic text-white/75 font-semibold">technology should serve people</strong> — not the other way around. Our mission is to accelerate Africa's digital maturity through responsible AI, modern infrastructure, and sustainable capacity building.
+      </p>
+
+      <!-- Pillars — text only, no colored backgrounds -->
+      <div class="reveal d4 flex flex-wrap justify-center gap-8 sm:gap-14 mt-2">
+        <div class="flex flex-col items-center gap-1.5">
+          <span class="font-display font-bold text-[#F05A28] tracking-[-0.02em]" style="font-size:clamp(20px,2.2vw,28px)">Ethical</span>
+          <span class="font-mono text-[9px] tracking-[.14em] uppercase text-white/40">AI Practices</span>
+        </div>
+        <div class="flex flex-col items-center gap-1.5">
+          <span class="font-display font-bold text-white/60 tracking-[-0.02em]" style="font-size:clamp(20px,2.2vw,28px)">Integrity</span>
+          <span class="font-mono text-[9px] tracking-[.14em] uppercase text-white/40">Data Governance</span>
+        </div>
+        <div class="flex flex-col items-center gap-1.5">
+          <span class="font-display font-bold text-white/60 tracking-[-0.02em]" style="font-size:clamp(20px,2.2vw,28px)">Capacity</span>
+          <span class="font-mono text-[9px] tracking-[.14em] uppercase text-white/40">People-First Building</span>
+        </div>
+        <div class="flex flex-col items-center gap-1.5">
+          <span class="font-display font-bold text-[#F05A28] tracking-[-0.02em]" style="font-size:clamp(20px,2.2vw,28px)">Impact</span>
+          <span class="font-mono text-[9px] tracking-[.14em] uppercase text-white/40">Measurable Outcomes</span>
+        </div>
+      </div>
+
+      <a href="partnership.html" class="reveal d5 inline-flex items-center gap-2 font-body font-semibold text-[13px] text-white/40 hover:text-white hover:underline underline-offset-4 transition-colors mt-2">
+        Partner With Us for Impact
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+  SECTION 7 — FINAL CTA
+  BG: #0B1F3B  |  Button: white bg + navy text
+══════════════════════════════════════════ -->
+<section id="final-cta" class="bg-navy/95 py-20 lg:py-28 border-t border-white/[.06] relative overflow-hidden">
+  <!-- Dot matrix — no gradients, no glows -->
+  <div class="absolute inset-0 pointer-events-none"
+       style="background-image:radial-gradient(rgba(255,255,255,.04)1px,transparent 1px);background-size:32px 32px"
+       aria-hidden="true"></div>
+
+  <div class="relative z-10 max-w-[1200px] mx-auto px-5 lg:px-10 flex flex-col items-center text-center gap-8">
+
+    <div class="reveal inline-flex items-center gap-3 font-body font-bold text-[15px] tracking-[.18em] uppercase text-white/30">
+      <span class="w-6 h-[2px] bg-white/15"></span>Free Consultation<span class="w-6 h-[2px] bg-white/15"></span>
+    </div>
+
+    <h2 class="reveal d1 font-display font-bold text-white leading-[1.05] tracking-[-0.025em] max-w-3xl" style="font-size:clamp(34px,5.5vw,68px)">
+      Ready to <span><span class="text-[#F05A28]"> Discover Your</span></span><br/><em class="italic">Fastest Digital Wins?</em>
+    </h2>
+
+    <p class="reveal d2 font-body font-light text-white/45 leading-relaxed max-w-[480px]" style="font-size:clamp(15px,1.5vw,18px)">
+      Book a free 30-minute consultation to uncover inefficiencies, automation opportunities, and infrastructure risks within your organisation.
+    </p>
+
+    <!-- Final CTA: white bg + navy text — only place this pattern appears -->
+    <div class="reveal d3 flex flex-wrap items-center justify-center gap-4">
+      <a href="contact.html" class="inline-flex items-center gap-2 bg-white text-navy font-body font-bold text-[13px] tracking-[.10em] uppercase px-10 py-5 transition-all hover:bg-gray-bg shadow-[0_4px_14px_rgba(0,0,0,.20)] whitespace-nowrap">
+        <svg class="w-4 h-4 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+        Book My Free Consultation
+      </a>
+      <a href="service.html" class="inline-flex items-center gap-2 bg-transparent text-white/60 font-body font-bold text-[12px] tracking-[.10em] uppercase px-7 py-5 border-2 border-white/15 transition-all hover:border-white/40 hover:text-white whitespace-nowrap">
+        Explore Our Services
+      </a>
+    </div>
+
+    <p class="reveal d4 font-body text-[12px] text-white/20 tracking-wide flex items-center gap-2">
+      <span class="text-white/10">—</span> No pressure. No obligation. Just clarity. <span class="text-white/10">—</span>
+    </p>
+
+    <!-- Trust row -->
+    <div class="reveal d5 flex flex-wrap items-center justify-center gap-6 sm:gap-10 pt-7 border-t border-white/[.06] w-full max-w-xl">
+      <div class="flex items-center gap-2">
+        <svg class="w-4 h-4 text-white/20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+        <span class="font-body font-semibold text-[10px] tracking-[.14em] uppercase text-white/25">Secure &amp; Confidential</span>
+      </div>
+      <span class="w-px h-5 bg-white/[.07] hidden sm:block"></span>
+      <div class="flex items-center gap-2">
+        <svg class="w-4 h-4 text-white/20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <span class="font-body font-semibold text-[10px] tracking-[.14em] uppercase text-white/25">30-Min Session</span>
+      </div>
+      <span class="w-px h-5 bg-white/[.07] hidden sm:block"></span>
+      <div class="flex items-center gap-2">
+        <svg class="w-4 h-4 text-white/20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+        <span class="font-body font-semibold text-[10px] tracking-[.14em] uppercase text-white/25">5-Day Delivery</span>
+      </div>
+      <span class="w-px h-5 bg-white/[.07] hidden sm:block"></span>
+      <div class="flex items-center gap-2">
+        <svg class="w-4 h-4 text-white/20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+        <span class="font-body font-semibold text-[10px] tracking-[.14em] uppercase text-white/25">Tailored Roadmap</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+  FOOTER
+  BG: #0B1F3B  |  Text: #D1D5DB  |  Headings: #FFFFFF  |  Links hover: #1E4ED8
+══════════════════════════════════════════ -->
+<footer class="bg-navy border-t border-white/[.05]">
+
+  <!-- Newsletter -->
+  <div class="border-b border-white/[.05] bg-blue-acc/10">
+    <div class="max-w-[1200px] mx-auto px-5 lg:px-10 py-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
+      <div>
+        <p class="font-body font-bold text-[14px] text-white mb-1">Stay Ahead of Nigeria's Digital Curve</p>
+        <p class="font-body text-[12.5px] text-txt-dim/60">Insights, case studies, and technology intelligence — no spam, ever.</p>
+      </div>
+      <div class="flex gap-2 w-full sm:w-auto">
+        <input type="email" placeholder="Your work email address"
+          class="flex-1 sm:w-[240px] bg-white/[.04] border border-white/[.10] text-white placeholder-white/25 font-body text-[13px] px-4 py-2.5 outline-none focus:border-blue-acc transition-colors"/>
+        <button type="button" class="bg-[#F05A28] text-white font-body font-bold text-[11px] tracking-[.10em] uppercase px-5 py-2.5 hover:bg-blue-dark transition-colors whitespace-nowrap flex-shrink-0 shadow-[0_4px_14px_rgba(0,0,0,.15)]">
+          Subscribe
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main grid -->
+  <div class="max-w-[1200px] bg-blue-acc/10 mx-auto px-5 lg:px-10 pt-14 pb-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
+
+      <!-- Brand — 4 cols -->
+      <div class="lg:col-span-4 flex flex-col gap-6">
+        <div class="flex items-center gap-2.5">
+          <!-- <div class="w-9 h-9 bg-blue-acc flex items-center justify-center flex-shrink-0"> -->
+            <!-- <span class="font-display font-bold text-white text-[15px] leading-none">TC</span> -->
+          <!-- </div> -->
+          <div class="flex flex-col leading-none gap-1">
+             <a href="/" aria-label="Techspecialist" class="flex items-center gap-3 flex-shrink-0">
+        <img id="nav-logo-img"
+          src="https://res.cloudinary.com/daqmbfctv/image/upload/v1772108889/WhatsApp_Image_2026-02-26_at_12.00.40-removebg-preview_qp8kjd.png"
+          alt="Techspecialist Consulting Limited"
+          class="h-10 w-auto object-contain"/>
+      </a>
+            <!-- <span class="font-display font-bold text-[15px] text-white">Techspecialist</span> -->
+             <img src="" alt="">
+            <!-- <span class="font-mono text-[9px] tracking-[.18em] uppercase text-txt-dim/40">Consulting Limited</span> -->
+          </div>
+        </div>
+        <p class="font-body text-[13.5px] text-txt-dim/50 leading-relaxed max-w-[270px]">Nigeria's enterprise AI and IT consulting partner — transforming organisations through strategy, infrastructure, and innovation.</p>
+        <div class="flex flex-col gap-2.5">
+          <div class="flex items-center gap-2 font-body text-[11px] font-semibold text-txt-dim/35"><span class="w-1.5 h-1.5 bg-blue-acc flex-shrink-0"></span>ISO Aligned</div>
+          <div class="flex items-center gap-2 font-body text-[11px] font-semibold text-txt-dim/35"><span class="w-1.5 h-1.5 bg-blue-acc flex-shrink-0"></span>Multi-Cloud Certified</div>
+          <div class="flex items-center gap-2 font-body text-[11px] font-semibold text-txt-dim/35"><span class="w-1.5 h-1.5 bg-blue-acc flex-shrink-0"></span>NITDA Registered</div>
+          <div class="flex items-center gap-2 font-body text-[11px] font-semibold text-txt-dim/35"><span class="w-1.5 h-1.5 bg-blue-acc flex-shrink-0"></span>CAC Incorporated</div>
+        </div>
+        <div class="flex gap-2">
+          <a href="#" aria-label="LinkedIn" class="w-8 h-8 border border-white/[.08] bg-white/[.02] flex items-center justify-center text-txt-dim/30 hover:text-blue-acc hover:border-blue-acc/30 transition-all">
+            <svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="#" aria-label="X / Twitter" class="w-8 h-8 border border-white/[.08] bg-white/[.02] flex items-center justify-center text-txt-dim/30 hover:text-blue-acc hover:border-blue-acc/30 transition-all">
+            <svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="w-8 h-8 border border-white/[.08] bg-white/[.02] flex items-center justify-center text-txt-dim/30 hover:text-blue-acc hover:border-blue-acc/30 transition-all">
+            <svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube" class="w-8 h-8 border border-white/[.08] bg-white/[.02] flex items-center justify-center text-txt-dim/30 hover:text-blue-acc hover:border-blue-acc/30 transition-all">
+            <svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Services — 2 cols -->
+      <div class="lg:col-span-2 flex flex-col gap-5">
+        <h5 class="font-body font-bold text-[10px] tracking-[.18em] uppercase text-white">Services</h5>
+        <ul class="flex flex-col gap-3">
+          <li><a href="service.html"  class="font-body text-[13px] text-txt-dim/45 hover:text-blue-acc transition-colors flex items-center gap-1.5"><span class="w-1 h-px bg-white/15 flex-shrink-0"></span>AI Solutions</a></li>
+          <li><a href="service.html"  class="font-body text-[13px] text-txt-dim/45 hover:text-blue-acc transition-colors flex items-center gap-1.5"><span class="w-1 h-px bg-white/15 flex-shrink-0"></span>IT Infrastructure</a></li>
+          <li><a href="service.html"  class="font-body text-[13px] text-txt-dim/45 hover:text-blue-acc transition-colors flex items-center gap-1.5"><span class="w-1 h-px bg-white/15 flex-shrink-0"></span>Digital Consulting</a></li>
+          <li><a href="service.html"  class="font-body text-[13px] text-txt-dim/45 hover:text-blue-acc transition-colors flex items-center gap-1.5"><span class="w-1 h-px bg-white/15 flex-shrink-0"></span>Custom Software</a></li>
+          <li><a href="service.html"  class="font-body text-[13px] text-txt-dim/45 hover:text-blue-acc transition-colors flex items-center gap-1.5"><span class="w-1 h-px bg-white/15 flex-shrink-0"></span>Data &amp; Analytics</a></li>
+          <li><a href="#final-cta"    class="font-body text-[13px] text-txt-dim/45 hover:text-blue-acc transition-colors flex items-center gap-1.5"><span class="w-1 h-px bg-white/15 flex-shrink-0"></span>Free Digital Audit</a></li>
+        </ul>
+      </div>
+
+      <!-- Company — 2 cols -->
+      <div class="lg:col-span-2 flex flex-col gap-5">
+        <h5 class="font-body font-bold text-[10px] tracking-[.18em] uppercase text-white">Company</h5>
+        <ul class="flex flex-col gap-3">
+          <li><a href="aboutus.html"      class="font-body text-[13px] text-txt-dim/45 hover:text-blue-acc transition-colors flex items-center gap-1.5"><span class="w-1 h-px bg-white/15 flex-shrink-0"></span>About Us</a></li>
+          <li><a href="case-studies.html" class="font-body text-[13px] text-txt-dim/45 hover:text-blue-acc transition-colors flex items-center gap-1.5"><span class="w-1 h-px bg-white/15 flex-shrink-0"></span>Case Studies</a></li>
+          <li><a href="partnership.html"  class="font-body text-[13px] text-txt-dim/45 hover:text-blue-acc transition-colors flex items-center gap-1.5"><span class="w-1 h-px bg-white/15 flex-shrink-0"></span>Partnership</a></li>
+          <li><a href="blog.html"         class="font-body text-[13px] text-txt-dim/45 hover:text-blue-acc transition-colors flex items-center gap-1.5"><span class="w-1 h-px bg-white/15 flex-shrink-0"></span>Blog &amp; Insights</a></li>
+          <li><a href="contact.html"      class="font-body text-[13px] text-txt-dim/45 hover:text-blue-acc transition-colors flex items-center gap-1.5"><span class="w-1 h-px bg-white/15 flex-shrink-0"></span>Careers</a></li>
+          <li><a href="contact.html"      class="font-body text-[13px] text-txt-dim/45 hover:text-blue-acc transition-colors flex items-center gap-1.5"><span class="w-1 h-px bg-white/15 flex-shrink-0"></span>Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact — 4 cols -->
+      <div class="lg:col-span-4 flex flex-col gap-6">
+        <h5 class="font-body font-bold text-[10px] tracking-[.18em] uppercase text-white">Get In Touch</h5>
+        <div class="flex items-start gap-3">
+          <div class="w-7 h-7 border border-white/[.06] flex items-center justify-center flex-shrink-0 mt-0.5 text-txt-dim/25">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <div>
+            <p class="font-mono text-[9px] tracking-[.14em] uppercase text-white/20 mb-1">Head Office</p>
+            <p class="font-body text-[13px] text-txt-dim/40 leading-relaxed">Abuja Liaison Office, FCT</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <div class="w-7 h-7 border border-white/[.06] flex items-center justify-center flex-shrink-0 mt-0.5 text-txt-dim/25">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          </div>
+          <div>
+            <p class="font-mono text-[9px] tracking-[.14em] uppercase text-white/20 mb-1">Email</p>
+            <a href="mailto:info@techspecialist.ng"    class="font-body text-[13px] text-txt-dim/40 hover:text-blue-acc transition-colors block">info@techspecialist.ng</a>
+            <a href="mailto:consult@techspecialist.ng" class="font-body text-[13px] text-txt-dim/40 hover:text-blue-acc transition-colors block">consult@techspecialist.ng</a>
+          </div>
+        </div>
+        <div class="flex items-start gap-3">
+          <div class="w-7 h-7 border border-white/[.06] flex items-center justify-center flex-shrink-0 mt-0.5 text-txt-dim/25">
+            <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          </div>
+          <div>
+            <p class="font-mono text-[9px] tracking-[.14em] uppercase text-white/20 mb-1">Phone</p>
+            <a href="tel:+2348000000000" class="font-body text-[13px] text-txt-dim/40 hover:text-blue-acc transition-colors block">+234 800 000 0000</a>
+            <a href="tel:+2349000000000" class="font-body text-[13px] text-txt-dim/40 hover:text-blue-acc transition-colors block">+234 900 000 0000</a>
+          </div>
+        </div>
+        <a href="#" class="self-start inline-flex items-center gap-2 bg-[#F05A28] text-white font-body font-bold text-[11px] tracking-[.10em] uppercase px-5 py-3 transition-colors hover:bg-blue-dark shadow-[0_4px_14px_rgba(0,0,0,.15)]">
+          Book Free Consultation
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="max-w-[1200px] mx-auto px-5 lg:px-10">
+    <div class="h-px bg-white/[.05]"></div>
+  </div>
+
+  <!-- Bottom bar -->
+  <div class="max-w-[1200px] mx-auto px-5 lg:px-10 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 flex-wrap">
+    <p class="font-body text-[11.5px] text-txt-dim/30 text-center sm:text-left">&copy; 2026 Techspecialist Consulting Limited. All rights reserved. CAC Registered · Abuja, Nigeria.</p>
+    <div class="flex items-center gap-4 flex-wrap justify-center">
+      <a href="#" class="font-body text-[11px] text-txt-dim/25 hover:text-white transition-colors">Privacy Policy</a>
+      <span class="text-white/10 text-[10px]">|</span>
+      <a href="#" class="font-body text-[11px] text-txt-dim/25 hover:text-white transition-colors">Terms of Service</a>
+      <span class="text-white/10 text-[10px]">|</span>
+      <a href="#" class="font-body text-[11px] text-txt-dim/25 hover:text-white transition-colors">Cookie Policy</a>
+    </div>
+    <button onclick="window.scrollTo({top:0,behavior:'smooth'})" class="flex items-center gap-1.5 font-body font-semibold text-[10px] tracking-[.10em] uppercase text-txt-dim/25 hover:text-white transition-colors">
+      Back to top <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
+    </button>
+  </div>
+
+</footer>
+
+
+<!-- Sticky CTA Bar -->
+<div id="sticky" class="sticky-bar fixed bottom-0 inset-x-0 z-50 bg-navy border-t-2 border-blue-acc px-5 lg:px-10 py-3.5 flex items-center justify-between gap-4">
+  <p class="font-body text-[13px] text-txt-dim/50">
+    <strong class="text-white font-semibold">Free Digital Audit</strong> — Identify your fastest wins in 5 working days.
+  </p>
+  <div class="flex items-center gap-3 flex-shrink-0">
+    <a href="#" class="inline-flex items-center gap-1.5 bg-[#F05A28] text-white font-body font-bold text-[10px] tracking-[.10em] uppercase px-4 py-2.5 hover:bg-blue-dark transition-colors shadow-[0_4px_14px_rgba(0,0,0,.15)] whitespace-nowrap">
+      Claim Free Audit
+    </a>
+    <button id="sticky-x" aria-label="Dismiss" class="text-txt-dim/25 hover:text-white transition-colors p-1">
+      <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+  </div>
+</div>
+
+<script src="main.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
