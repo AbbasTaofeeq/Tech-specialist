@@ -54,3 +54,25 @@
 /* Client cell grayscale */
 .client-chip{filter:grayscale(1);opacity:.4;transition:filter .2s,opacity .2s}
 .client-chip:hover{filter:grayscale(0);opacity:1}
+
+/* .ticker-wrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 70s linear infinite;
+  justify-content: space-between;
+  align-items: center
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+} */
